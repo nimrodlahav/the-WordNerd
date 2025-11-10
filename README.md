@@ -18,6 +18,7 @@ For each one of the three days of the cycle, you are quizzed on the words in you
 **Cycle Initialization**
 At the beginning of each interval, the user wipes-out words he already knows, resetting his batches for the upcoming interval.
 <p align="center">
-  <img src="gifs/initializeCycle.gif" alt="App Demo" width="150"/>
+  <img src="gifs/initializeCycle.gif" alt="App Demo" width="150"/>  
+  
 
-*For additional documentation, links, screenshots and supplementary information, contact me @ [Link text](https://www.linkedin.com/in/nimrod-lahav-03793523b/)*
+*For additional documentation, links, screenshots and supplementary information, contact me @ [LI](https://www.linkedin.com/in/nimrod-lahav-03793523b/)*
