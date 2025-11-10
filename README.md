@@ -8,5 +8,4 @@ Here the user can choose wether to practice his current cycle - which contains a
 
 **Quiz**
 For each one of the three days of the cycle, you are quizzed on the words in your current batch/es. Each quiz appends a score to your total "familiarity score".  
-
-![App Demo](gifs/quiz.gif)
+<img src="gifs/quiz.gif" alt="App Demo" width="150"/>
