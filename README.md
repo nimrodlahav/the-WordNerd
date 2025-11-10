@@ -5,3 +5,4 @@ Home Page
 Here the user can choose wether to practice his current cycle - which contains all the clusters he is memorizing at this period in time. There is also an option to view current progress and details regarding his preferred system settings.
 
 
+<img src="Screenshots/WhatsApp Image 2025-11-10 at 11.57.26.jpeg" alt="App Screenshot" width="400"/>
