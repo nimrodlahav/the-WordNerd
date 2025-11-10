@@ -12,6 +12,6 @@ For each one of the three days of the cycle, you are quizzed on the words in you
   <tr>
     <td><img src="gifs/quiz.gif" alt="App Demo" width="150"></td>
     <td width="20"></td> <!-- spacer cell -->
-    <td><img src="Screenshots/WhatsApp Image 2025-11-10 at 11.57.11 (2).png" alt="App Screenshot" width="150"></td>
+    <td><img src="Screenshots/WhatsApp Image 2025-11-10 at 11.57.11 (2).jpeg" alt="App Screenshot" width="150"></td>
   </tr>
 </table>
