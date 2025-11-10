@@ -11,5 +11,5 @@ For each one of the three days of the cycle, you are quizzed on the words in you
 <p align="center">
   <img src="gifs/quiz.gif" alt="App Demo" width="150"/>
   &nbsp;&nbsp;&nbsp;
-  <img src="Screenshots/WhatsApp Image 2025-11-10 at 11.57.11 (2).png" alt="App Screenshot" width="150"/>
+  <img src="Screenshots/WhatsApp Image 2025-11-10 at 11.57.11 (2).jpeg" alt="App Screenshot" width="150"/>
 </p>
