@@ -1,4 +1,5 @@
-# the WordNerd
+# the WordNerd   <img src="icon.jpeg" alt="App Screenshot" width="150"/>
+
 WordNerd is a smart vocabulary-building app for English learners. Using transformer-powered language models, WordNerd provides dynamic and personalized feedback. This is crucial, as most languages are flexible and fluid: they don’t follow exact rules, making languages rich but also challenging to acquire. Hence, the need for a non-binary feedback. Below are visuals of **some** of the application's UX:
 
 
