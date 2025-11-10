@@ -13,3 +13,8 @@ For each one of the three days of the cycle, you are quizzed on the words in you
   &nbsp;&nbsp;&nbsp;
   <img src="Screenshots/WhatsApp Image 2025-11-10 at 11.57.11 (2).jpeg" alt="App Screenshot" width="150"/>
 </p>
+
+**Cycle Initialization**
+At the beginning of each interval, the user wipes-out words he already knows, resetting his batches for the upcoming interval.
+<p align="center">
+  <img src="gifs/initializeCycle.gif" alt="App Demo" width="150"/>
