@@ -24,4 +24,4 @@ At the beginning of each interval, the user wipes-out words he already knows, re
 
     
 
-*For additional documentation, apk files, screenshots and supplementary information, contact me @ [LinkedIn Profile](https://www.linkedin.com/in/nimrod-lahav-03793523b/)*
+*For apk files, screenshots and supplementary information, contact me @ [LinkedIn Profile](https://www.linkedin.com/in/nimrod-lahav-03793523b/)*
