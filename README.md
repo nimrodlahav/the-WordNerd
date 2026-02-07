@@ -1,7 +1,5 @@
 # the WordNerd   <img src="icon.png" alt="App Screenshot" width="30"/>
 
-[Install on Android](https://expo.dev/accounts/nimrodlahav/projects/word_nerd_front/builds/6065415f-c41e-4724-8269-9bcf4b2a9aca), or contact for apk.
-
 WordNerd is an AI powered vocabulary-building app for Hebrew speakers learning English. Using Transformer-based language models, WordNerd provides dynamic and personalized feedback. This is crucial, as most languages are flexible and fluid: they don’t follow exact rules, making them rich and alive, but also challenging to acquire. Hence the need for a non-binary feedback. Below are visuals of **some** of the application's UX:
 
 
@@ -26,4 +24,4 @@ At the beginning of each interval, the user wipes-out words he already knows, re
 
     
 
-*For additional documentation, links, screenshots and supplementary information, contact me @ [LinkedIn Profile](https://www.linkedin.com/in/nimrod-lahav-03793523b/)*
+*For additional documentation, apk files, screenshots and supplementary information, contact me @ [LinkedIn Profile](https://www.linkedin.com/in/nimrod-lahav-03793523b/)*
