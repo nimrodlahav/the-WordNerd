@@ -1,0 +1,1279 @@
+{
+  "apple": { "translations": ["תפוח"], "level": "beginner", "example": "The apple is red." },
+  "banana": { "translations": ["בננה"], "level": "beginner", "example": "She eats a banana every day." },
+  "orange": { "translations": ["תפוז"], "level": "beginner", "example": "He drank orange juice." },
+  "grape": { "translations": ["ענב"], "level": "beginner", "example": "Grapes are tasty." },
+  "watermelon": { "translations": ["אבטיח"], "level": "beginner", "example": "The watermelon is sweet." },
+  "fruit": { "translations": ["פרי"], "level": "beginner", "example": "Fruit is healthy." },
+  "vegetable": { "translations": ["ירק"], "level": "beginner", "example": "A carrot is a vegetable." },
+  "carrot": { "translations": ["גזר"], "level": "beginner", "example": "The rabbit eats a carrot." },
+  "tomato": { "translations": ["עגבניה"], "level": "beginner", "example": "The tomato is red." },
+  "cucumber": { "translations": ["מלפפון"], "level": "beginner", "example": "She cut a cucumber." },
+
+
+  "boy": { "translations": ["ילד"], "level": "beginner", "example": "The boy plays soccer." },
+  "girl": { "translations": ["ילדה"], "level": "beginner", "example": "The girl is smiling." },
+  "baby": { "translations": ["תינוק"], "level": "beginner", "example": "The baby is crying." },
+  "man": { "translations": ["גבר"], "level": "beginner", "example": "The man is tall." },
+  "woman": { "translations": ["אישה"], "level": "beginner", "example": "The woman is happy." },
+  "friend": { "translations": ["חבר","חברה"], "level": "beginner", "example": "My friend is here." },
+  "family": { "translations": ["משפחה"], "level": "beginner", "example": "My family is big." },
+  "child": { "translations": ["ילד","ילדה"], "level": "beginner", "example": "The child is drawing." },
+
+  "shirt": { "translations": ["חולצה"], "level": "beginner", "example": "My shirt is blue." },
+  "pants": { "translations": ["מכנסיים"], "level": "beginner", "example": "He wears pants." },
+  "shoes": { "translations": ["נעליים"], "level": "beginner", "example": "Her shoes are new." },
+  "dress": { "translations": ["שמלה"], "level": "beginner", "example": "She bought a dress." },
+  "hat": { "translations": ["כובע"], "level": "beginner", "example": "Wear a hat in the sun." },
+  "coat": { "translations": ["מעיל"], "level": "beginner", "example": "Put on your coat." },
+  "gloves": { "translations": ["כפפות"], "level": "beginner", "example": "She wears gloves." },
+  "socks": { "translations": ["גרביים"], "level": "beginner", "example": "His socks are dirty." },
+
+  "door": { "translations": ["דלת"], "level": "beginner", "example": "Close the door, please." },
+  "window": { "translations": ["חלון"], "level": "beginner", "example": "The window is open." },
+  "table": { "translations": ["שולחן"], "level": "beginner", "example": "The food is on the table." },
+  "chair": { "translations": ["כיסא"], "level": "beginner", "example": "She sits on the chair." },
+  "bed": { "translations": ["מיטה"], "level": "beginner", "example": "The bed is soft." },
+  "sofa": { "translations": ["ספה"], "level": "beginner", "example": "They sit on the sofa." },
+  "kitchen": { "translations": ["מטבח"], "level": "beginner", "example": "The kitchen is clean." },
+  "bathroom": { "translations": ["שירותים","אמבטיה"], "level": "beginner", "example": "The bathroom is small." },
+  "living room": { "translations": ["סלון"], "level": "beginner", "example": "They watch TV in the living room." },
+  "home": { "translations": ["בית"], "level": "beginner", "example": "Home is where the heart is." },
+
+  "sun": { "translations": ["שמש"], "level": "beginner", "example": "The sun is bright." },
+  "moon": { "translations": ["ירח"], "level": "beginner", "example": "The moon is full." },
+  "star": { "translations": ["כוכב"], "level": "beginner", "example": "A star is shining." },
+  "sky": { "translations": ["שמים"], "level": "beginner", "example": "The sky is blue." },
+  "cloud": { "translations": ["ענן"], "level": "beginner", "example": "A cloud is moving." },
+  "rain": { "translations": ["גשם"], "level": "beginner", "example": "It will rain today." },
+  "snow": { "translations": ["שלג"], "level": "beginner", "example": "The snow is white." },
+  "wind": { "translations": ["רוח"], "level": "beginner", "example": "The wind is strong." },
+
+  "blue": { "translations": ["כחול"], "level": "beginner", "example": "The sky is blue." },
+  "red": { "translations": ["אדום"], "level": "beginner", "example": "The apple is red." },
+  "green": { "translations": ["ירוק"], "level": "beginner", "example": "The leaf is green." },
+  "yellow": { "translations": ["צהוב"], "level": "beginner", "example": "The flower is yellow." },
+  "black": { "translations": ["שחור"], "level": "beginner", "example": "The night is black." },
+  "white": { "translations": ["לבן"], "level": "beginner", "example": "The wall is white." },
+  "brown": { "translations": ["חום"], "level": "beginner", "example": "The coffee is brown." },
+  "gray": { "translations": ["אפור"], "level": "beginner", "example": "The clouds are gray." },
+  "purple": { "translations": ["סגול"], "level": "beginner", "example": "The dress is purple." },
+
+
+  "cold": { "translations": ["קר"], "level": "beginner", "example": "The water is cold." },
+  "hot": { "translations": ["חם"], "level": "beginner", "example": "The soup is hot." },
+  "warm": { "translations": ["חמים"], "level": "beginner", "example": "The weather is warm today." },
+  "cool": { "translations": ["קריר"], "level": "beginner", "example": "The breeze feels cool." },
+  "big": { "translations": ["גדול"], "level": "beginner", "example": "The house is big." },
+  "small": { "translations": ["קטן"], "level": "beginner", "example": "The box is small." },
+  "long": { "translations": ["ארוך"], "level": "beginner", "example": "The road is long." },
+  "short": { "translations": ["קצר"], "level": "beginner", "example": "The movie is short." },
+  "tall": { "translations": ["גבוה"], "level": "beginner", "example": "He is tall." },
+  "fat": { "translations": ["שמן"], "level": "beginner", "example": "The cat is fat." },
+  "thin": { "translations": ["רזה"], "level": "beginner", "example": "She is thin." },
+  "fast": { "translations": ["מהיר"], "level": "beginner", "example": "The car is fast." },
+  "slow": { "translations": ["איטי"], "level": "beginner", "example": "The turtle is slow." },
+  "new": { "translations": ["חדש"], "level": "beginner", "example": "My phone is new." },
+  "old": { "translations": ["ישן"], "level": "beginner", "example": "This book is old." },
+  "young": { "translations": ["צעיר"], "level": "beginner", "example": "He is very young." },
+  "good": { "translations": ["טוב"], "level": "beginner", "example": "That’s a good idea." },
+  "bad": { "translations": ["רע"], "level": "beginner", "example": "That’s a bad plan." },
+  "happy": { "translations": ["שמח"], "level": "beginner", "example": "She is happy today." },
+  "sad": { "translations": ["עצוב"], "level": "beginner", "example": "He looks sad." },
+  "angry": { "translations": ["כועס"], "level": "beginner", "example": "She is angry with me." },
+  "funny": { "translations": ["מצחיק"], "level": "beginner", "example": "That joke is funny." },
+  "beautiful": { "translations": ["יפה"], "level": "beginner", "example": "It’s a beautiful day." },
+  "ugly": { "translations": ["מכוער"], "level": "beginner", "example": "That painting is ugly." },
+  "clean": { "translations": ["נקי"], "level": "beginner", "example": "The room is clean." },
+  "dirty": { "translations": ["מלוכלך"], "level": "beginner", "example": "The floor is dirty." },
+  "strong": { "translations": ["חזק"], "level": "beginner", "example": "He is strong." },
+  "weak": { "translations": ["חלש"], "level": "beginner", "example": "She felt weak." },
+  "easy": { "translations": ["קל"], "level": "beginner", "example": "The test was easy." },
+  "difficult": { "translations": ["קשה"], "level": "beginner", "example": "The problem is difficult." },
+
+  "run": { "translations": ["לרוץ"], "level": "beginner", "example": "I run every morning." },
+  "walk": { "translations": ["ללכת"], "level": "beginner", "example": "We walk to school." },
+  "jump": { "translations": ["לקפוץ"], "level": "beginner", "example": "The frog can jump." },
+  "sit": { "translations": ["לשבת"], "level": "beginner", "example": "Please sit down." },
+  "stand": { "translations": ["לעמוד"], "level": "beginner", "example": "Stand near the door." },
+  "sleep": { "translations": ["לישון"], "level": "beginner", "example": "The baby is sleeping." },
+  "eat": { "translations": ["לאכול"], "level": "beginner", "example": "We eat dinner at 7." },
+  "drink": { "translations": ["לשתות"], "level": "beginner", "example": "I drink water." },
+  "read": { "translations": ["לקרוא"], "level": "beginner", "example": "She reads a book." },
+  "write": { "translations": ["לכתוב"], "level": "beginner", "example": "He writes a letter." },
+  "open": { "translations": ["לפתוח"], "level": "beginner", "example": "Open the window." },
+  "close": { "translations": ["לסגור"], "level": "beginner", "example": "Close the door." },
+  "listen": { "translations": ["להקשיב"], "level": "beginner", "example": "Listen to your teacher." },
+  "speak": { "translations": ["לדבר"], "level": "beginner", "example": "She speaks Hebrew." },
+  "say": { "translations": ["לומר"], "level": "beginner", "example": "He said hello." },
+  "see": { "translations": ["לראות"], "level": "beginner", "example": "I see a bird." },
+  "hear": { "translations": ["לשמוע"], "level": "beginner", "example": "Do you hear me?" },
+  "smell": { "translations": ["להריח"], "level": "beginner", "example": "The flowers smell nice." },
+  "touch": { "translations": ["לגעת"], "level": "beginner", "example": "Don’t touch that." },
+  "think": { "translations": ["לחשוב"], "level": "beginner", "example": "Think carefully." },
+  "know": { "translations": ["לדעת"], "level": "beginner", "example": "I know the answer." },
+  "understand": { "translations": ["להבין"], "level": "beginner", "example": "Do you understand?" },
+  "learn": { "translations": ["ללמוד"], "level": "beginner", "example": "We learn new words." },
+  "teach": { "translations": ["ללמד"], "level": "beginner", "example": "She teaches English." },
+
+  "mother": { "translations": ["אמא"], "level": "beginner", "example": "My mother cooks dinner." },
+  "father": { "translations": ["אבא"], "level": "beginner", "example": "My father drives to work." },
+  "brother": { "translations": ["אח"], "level": "beginner", "example": "My brother is older." },
+  "sister": { "translations": ["אחות"], "level": "beginner", "example": "Her sister is tall." },
+  "aunt": { "translations": ["דודה"], "level": "beginner", "example": "My aunt is visiting." },
+  "uncle": { "translations": ["דוד"], "level": "beginner", "example": "My uncle is funny." },
+  "cousin": { "translations": ["בן דוד","בת דודה"], "level": "beginner", "example": "My cousin lives in Tel Aviv." },
+  "grandmother": { "translations": ["סבתא"], "level": "beginner", "example": "My grandmother bakes cookies." },
+  "grandfather": { "translations": ["סבא"], "level": "beginner", "example": "My grandfather tells stories." },
+
+  "day": { "translations": ["יום"], "level": "beginner", "example": "It’s a sunny day." },
+  "night": { "translations": ["לילה"], "level": "beginner", "example": "Good night!" },
+  "morning": { "translations": ["בוקר"], "level": "beginner", "example": "Good morning!" },
+  "evening": { "translations": ["ערב"], "level": "beginner", "example": "Good evening!" },
+  "today": { "translations": ["היום"], "level": "beginner", "example": "Today is Monday." },
+  "yesterday": { "translations": ["אתמול"], "level": "beginner", "example": "Yesterday was Sunday." },
+  "tomorrow": { "translations": ["מחר"], "level": "beginner", "example": "Tomorrow will be Tuesday." },
+  "week": { "translations": ["שבוע"], "level": "beginner", "example": "There are seven days in a week." },
+  "month": { "translations": ["חודש"], "level": "beginner", "example": "My birthday is next month." },
+  "year": { "translations": ["שנה"], "level": "beginner", "example": "Happy New Year!" },
+  "time": { "translations": ["זמן"], "level": "beginner", "example": "What time is it?" },
+  "hour": { "translations": ["שעה"], "level": "beginner", "example": "An hour has sixty minutes." },
+  "minute": { "translations": ["דקה"], "level": "beginner", "example": "Wait a minute." },
+  "second": { "translations": ["שנייה"], "level": "beginner", "example": "A minute has sixty seconds." },
+
+  "school": { "translations": ["בית ספר"], "level": "beginner", "example": "We go to school every day." },
+  "class": { "translations": ["כיתה"], "level": "beginner", "example": "Our class is big." },
+  "student": { "translations": ["תלמיד"], "level": "beginner", "example": "The student reads a book." },
+  "book": { "translations": ["ספר"], "level": "beginner", "example": "I read a book." },
+  "pencil": { "translations": ["עיפרון"], "level": "beginner", "example": "Sharpen your pencil." },
+  "pen": { "translations": ["עט"], "level": "beginner", "example": "I write with a pen." },
+  "paper": { "translations": ["נייר"], "level": "beginner", "example": "Please take a paper." },
+  "desk": { "translations": ["שולחן"], "level": "beginner", "example": "The teacher sits at her desk." },
+  "homework": { "translations": ["שיעורי בית"], "level": "beginner", "example": "Do your homework." },
+  "lesson": { "translations": ["שיעור"], "level": "beginner", "example": "The lesson starts now." },
+
+  "food": { "translations": ["אוכל"], "level": "beginner", "example": "The food is delicious." },
+  "bread": { "translations": ["לחם"], "level": "beginner", "example": "I like fresh bread." },
+  "cheese": { "translations": ["גבינה"], "level": "beginner", "example": "I eat bread with cheese." },
+  "meat": { "translations": ["בשר"], "level": "beginner", "example": "He doesn’t eat meat." },
+  "rice": { "translations": ["אורז"], "level": "beginner", "example": "The rice is ready." },
+  "soup": { "translations": ["מרק"], "level": "beginner", "example": "The soup is hot." },
+  "salad": { "translations": ["סלט"], "level": "beginner", "example": "I like salad." },
+  "apple juice": { "translations": ["מיץ תפוחים"], "level": "beginner", "example": "I drink apple juice." },
+  "coffee": { "translations": ["קפה"], "level": "beginner", "example": "He drinks coffee." },
+  "tea": { "translations": ["תה"], "level": "beginner", "example": "She likes tea." },
+  "milk": { "translations": ["חלב"], "level": "beginner", "example": "Milk is white." },
+  "water": { "translations": ["מים"], "level": "beginner", "example": "Water is important." },
+  "salt": { "translations": ["מלח"], "level": "beginner", "example": "Add some salt." },
+  "sugar": { "translations": ["סוכר"], "level": "beginner", "example": "I put sugar in my tea." },
+  "spoon": { "translations": ["כף"], "level": "beginner", "example": "Stir with a spoon." },
+  "knife": { "translations": ["סכין"], "level": "beginner", "example": "Be careful with the knife." },
+  "fork": { "translations": ["מזלג"], "level": "beginner", "example": "Use a fork to eat." },
+
+  "plate": { "translations": ["צלחת"], "level": "beginner", "example": "The plate is clean." },
+  "cup": { "translations": ["כוס"], "level": "beginner", "example": "She poured water into the cup." },
+  "bottle": { "translations": ["בקבוק"], "level": "beginner", "example": "The bottle is full." },
+  "glass": { "translations": ["כוס"], "level": "beginner", "example": "A glass of juice." },
+  "bag": { "translations": ["תיק"], "level": "beginner", "example": "He carried a big bag." },
+  "box": { "translations": ["קופסה"], "level": "beginner", "example": "The box is heavy." },
+  "ball": { "translations": ["כדור"], "level": "beginner", "example": "Kick the ball." },
+  "toy": { "translations": ["צעצוע"], "level": "beginner", "example": "The child plays with a toy." },
+  "clock": { "translations": ["שעון"], "level": "beginner", "example": "The clock shows ten o’clock." },
+  "phone": { "translations": ["טלפון"], "level": "beginner", "example": "She called on the phone." },
+  "computer": { "translations": ["מחשב"], "level": "beginner", "example": "He works on the computer." },
+  "television": { "translations": ["טלוויזיה"], "level": "beginner", "example": "We watched television." },
+  "radio": { "translations": ["רדיו"], "level": "beginner", "example": "Turn on the radio." },
+  "camera": { "translations": ["מצלמה"], "level": "beginner", "example": "He took a photo with the camera." },
+  "bookstore": { "translations": ["חנות ספרים"], "level": "beginner", "example": "I went to the bookstore." },
+  "market": { "translations": ["שוק"], "level": "beginner", "example": "They bought fruit at the market." },
+  "store": { "translations": ["חנות"], "level": "beginner", "example": "The store is open." },
+  "restaurant": { "translations": ["מסעדה"], "level": "beginner", "example": "We ate at a restaurant." },
+  "park": { "translations": ["פארק"], "level": "beginner", "example": "The children play in the park." },
+  "street": { "translations": ["רחוב"], "level": "beginner", "example": "The street is busy." },
+  "road": { "translations": ["כביש"], "level": "beginner", "example": "Drive carefully on the road." },
+  "bridge": { "translations": ["גשר"], "level": "beginner", "example": "The bridge is long." },
+  "city": { "translations": ["עיר"], "level": "beginner", "example": "Tel Aviv is a big city." },
+  "village": { "translations": ["כפר"], "level": "beginner", "example": "He lives in a small village." },
+  "country": { "translations": ["מדינה"], "level": "beginner", "example": "Israel is a small country." },
+  "mountain": { "translations": ["הר"], "level": "beginner", "example": "They climbed the mountain." },
+  "river": { "translations": ["נהר"], "level": "beginner", "example": "The river is deep." },
+  "lake": { "translations": ["אגם"], "level": "beginner", "example": "The lake is beautiful." },
+  "sea": { "translations": ["ים"], "level": "beginner", "example": "The sea is calm today." },
+  "ocean": { "translations": ["אוקיינוס"], "level": "beginner", "example": "The ocean is large and blue." },
+  "forest": { "translations": ["יער"], "level": "beginner", "example": "We walked in the forest." },
+  "tree": { "translations": ["עץ"], "level": "beginner", "example": "The tree is tall." },
+  "flower": { "translations": ["פרח"], "level": "beginner", "example": "The flower is red." },
+  "grass": { "translations": ["דשא"], "level": "beginner", "example": "The grass is green." },
+  "field": { "translations": ["שדה"], "level": "beginner", "example": "Cows eat in the field." },
+  "farm": { "translations": ["חווה"], "level": "beginner", "example": "He works on a farm." },
+  "animal": { "translations": ["חיה"], "level": "beginner", "example": "The cow is a farm animal." },
+  "cow": { "translations": ["פרה"], "level": "beginner", "example": "The cow gives milk." },
+  "sheep": { "translations": ["כבשה"], "level": "beginner", "example": "The sheep are in the field." },
+  "chicken": { "translations": ["תרנגולת"], "level": "beginner", "example": "The chicken lays eggs." },
+  "pig": { "translations": ["חזיר"], "level": "beginner", "example": "The pig is pink." },
+  "goat": { "translations": ["עז"], "level": "beginner", "example": "The goat eats grass." },
+  "duck": { "translations": ["ברווז"], "level": "beginner", "example": "The duck swims in the pond." },
+  "bird": { "translations": ["ציפור"], "level": "beginner", "example": "The bird sings." },
+  "horse": { "translations": ["סוס"], "level": "beginner", "example": "The horse runs fast." },
+  "dog": { "translations": ["כלב"], "level": "beginner", "example": "The dog is friendly." },
+  "cat": { "translations": ["חתול"], "level": "beginner", "example": "The cat sleeps on the chair." },
+  "mouse": { "translations": ["עכבר"], "level": "beginner", "example": "The mouse ran away." },
+  "snake": { "translations": ["נחש"], "level": "beginner", "example": "The snake is long." },
+  "monkey": { "translations": ["קוף"], "level": "beginner", "example": "The monkey climbs the tree." },
+  "lion": { "translations": ["אריה"], "level": "beginner", "example": "The lion is the king of the jungle." },
+  "tiger": { "translations": ["טיגריס"], "level": "beginner", "example": "The tiger has stripes." },
+  "elephant": { "translations": ["פיל"], "level": "beginner", "example": "The elephant is big." },
+  "bear": { "translations": ["דוב"], "level": "beginner", "example": "The bear eats honey." },
+  "zebra": { "translations": ["זברה"], "level": "beginner", "example": "The zebra has black and white stripes." },
+  "fox": { "translations": ["שועל"], "level": "beginner", "example": "The fox is clever." },
+  "frog": { "translations": ["צפרדע"], "level": "beginner", "example": "The frog jumps high." },
+  "bee": { "translations": ["דבורה"], "level": "beginner", "example": "The bee makes honey." },
+  "butterfly": { "translations": ["פרפר"], "level": "beginner", "example": "The butterfly is colorful." },
+  "insect": { "translations": ["חרק"], "level": "beginner", "example": "A bee is an insect." },
+
+  "color": { "translations": ["צבע"], "level": "beginner", "example": "What color is your shirt?" },
+  "number": { "translations": ["מספר"], "level": "beginner", "example": "Write the number here." },
+  "one": { "translations": ["אחד"], "level": "beginner", "example": "One apple." },
+  "two": { "translations": ["שניים"], "level": "beginner", "example": "Two cats." },
+  "three": { "translations": ["שלושה"], "level": "beginner", "example": "Three dogs." },
+  "four": { "translations": ["ארבעה"], "level": "beginner", "example": "Four chairs." },
+  "five": { "translations": ["חמישה"], "level": "beginner", "example": "Five books." },
+  "six": { "translations": ["שישה"], "level": "beginner", "example": "Six people." },
+  "seven": { "translations": ["שבעה"], "level": "beginner", "example": "Seven days." },
+  "eight": { "translations": ["שמונה"], "level": "beginner", "example": "Eight birds." },
+  "nine": { "translations": ["תשעה"], "level": "beginner", "example": "Nine students." },
+  "ten": { "translations": ["עשרה"], "level": "beginner", "example": "Ten fingers." },
+
+  "yes": { "translations": ["כן"], "level": "beginner", "example": "Yes, I agree." },
+  "no": { "translations": ["לא"], "level": "beginner", "example": "No, thank you." },
+  "please": { "translations": ["בבקשה"], "level": "beginner", "example": "Please sit down." },
+  "thank you": { "translations": ["תודה"], "level": "beginner", "example": "Thank you very much." },
+  "sorry": { "translations": ["סליחה"], "level": "beginner", "example": "I’m sorry for being late." },
+  "hello": { "translations": ["שלום"], "level": "beginner", "example": "Hello, how are you?" },
+  "goodbye": { "translations": ["להתראות"], "level": "beginner", "example": "Goodbye, see you soon." },
+  "good morning": { "translations": ["בוקר טוב"], "level": "beginner", "example": "Good morning everyone." },
+  "good night": { "translations": ["לילה טוב"], "level": "beginner", "example": "Good night, sleep well." },
+  "welcome": { "translations": ["ברוך הבא"], "level": "beginner", "example": "Welcome to our home." },
+
+
+  "bored": { "translations": ["משועמם"], "level": "intermediate", "example": "She feels bored in class." },
+  "confused": { "translations": ["מבולבל"], "level": "intermediate", "example": "He is confused about the rules." },
+  "excited": { "translations": ["נרגש"], "level": "intermediate", "example": "I’m excited for the trip." },
+  "scared": { "translations": ["מפוחד"], "level": "intermediate", "example": "The child is scared of the dark." },
+  "brave": { "translations": ["אמיץ"], "level": "intermediate", "example": "The firefighter is brave." },
+  "lazy": { "translations": ["עצלן"], "level": "intermediate", "example": "He is too lazy to work." },
+  "serious": { "translations": ["רציני"], "level": "intermediate", "example": "She gave a serious answer." },
+  "proud": { "translations": ["גאה"], "level": "intermediate", "example": "I am proud of you." },
+  "calm": { "translations": ["רגוע"], "level": "intermediate", "example": "Stay calm." },
+  "clever": { "translations": ["פיקח"], "level": "intermediate", "example": "She is a clever student." },
+  "useless": { "translations": ["חסר תועלת"], "level": "intermediate", "example": "This tool is useless." },
+  "hopeful": { "translations": ["אופטימי"], "level": "intermediate", "example": "He feels hopeful.", "partitions": ["hope","-ful"] },
+
+  "quickly": { "translations": ["במהירות", "מהר"], "level": "intermediate", "example": "He ran quickly.", "partitions": ["quick","-ly"] },
+  "slowly": { "translations": ["באיטיות", "לאט"], "level": "intermediate", "example": "Please walk slowly.", "partitions": ["slow","-ly"] },
+ "clearly": { "translations": ["בבירור"], "level": "intermediate", "example": "Explain clearly.", "partitions": ["clear","-ly"] },
+"because": { "translations": ["כי","בגלל"], "level": "intermediate", "example": "I stayed because I was tired." },
+ 
+  "expensive": { "translations": ["יקר"], "level": "intermediate", "example": "The shoes are expensive." },
+  "cheap": { "translations": ["זול"], "level": "intermediate", "example": "The meal was cheap." },
+ "dangerous": { "translations": ["מסוכן"], "level": "intermediate", "example": "The road is dangerous." },
+  "safe": { "translations": ["בטוח"], "level": "intermediate", "example": "This place is safe." },
+  "healthy": { "translations": ["בריא"], "level": "intermediate", "example": "Vegetables are healthy." },
+  "sick": { "translations": ["חולה"], "level": "intermediate", "example": "He is sick today." },
+  "wet": { "translations": ["רטוב"], "level": "intermediate", "example": "My clothes are wet." },
+  "dry": { "translations": ["יבש"], "level": "intermediate", "example": "The towel is dry." },
+  "bright": { "translations": ["בהיר"], "level": "intermediate", "example": "The room is bright." },
+  "dark": { "translations": ["חשוך"], "level": "intermediate", "example": "The room is dark." },
+  "noisy": { "translations": ["רועש"], "level": "intermediate", "example": "The street is noisy." },
+
+  "almost": { "translations": ["כמעט"], "level": "intermediate", "example": "I almost forgot." },
+  "already": { "translations": ["כבר"], "level": "intermediate", "example": "I already finished." },
+  "maybe": { "translations": ["אולי"], "level": "intermediate", "example": "Maybe tomorrow." },
+  "probably": { "translations": ["כנראה"], "level": "intermediate", "example": "He will probably come." },
+  "definitely": { "translations": ["בהחלט"], "level": "intermediate", "example": "I definitely agree." },
+  "usually": { "translations": ["בדרך כלל"], "level": "intermediate", "example": "I usually walk to school.", "partitions": ["usual","-ly"] },
+  
+  "beside": { "translations": ["ליד"], "level": "intermediate", "example": "The lamp is beside the bed." },
+  "inside": { "translations": ["בפנים"], "level": "intermediate", "example": "The keys are inside the bag." },
+  "outside": { "translations": ["בחוץ"], "level": "intermediate", "example": "They are playing outside." },
+  "above": { "translations": ["מעל"], "level": "intermediate", "example": "The picture is above the sofa." },
+  "below": { "translations": ["מתחת"], "level": "intermediate", "example": "The cat is below the table." },
+
+  "annoying": { "translations": ["מעצבן"], "level": "intermediate", "example": "This noise is annoying." },
+  "amazing": { "translations": ["מדהים"], "level": "intermediate", "example": "What an amazing view!" },
+  "awful": { "translations": ["נורא"], "level": "intermediate", "example": "The food tasted awful." },
+  "boring": { "translations": ["משעמם"], "level": "intermediate", "example": "This movie is boring." },
+  "brilliant": { "translations": ["מבריק"], "level": "intermediate", "example": "What a brilliant idea!" },
+  "broken": { "translations": ["שבור"], "level": "intermediate", "example": "The chair is broken." },
+  "busy": { "translations": ["עסוק"], "level": "intermediate", "example": "He is busy now." },
+  "careful": { "translations": ["זהיר"], "level": "intermediate", "example": "Be careful with that knife." },
+  "careless": { "translations": ["פזיז","לא זהיר"], "level": "intermediate", "example": "That was a careless mistake.", "partitions": ["care","-less"] },
+  "cheerful": { "translations": ["עליז","שמֵח"], "level": "intermediate", "example": "She has a cheerful mood." },
+  "comfortable": { "translations": ["נוח"], "level": "intermediate", "example": "This sofa is comfortable." },
+  "confusing": { "translations": ["מבלבל"], "level": "intermediate", "example": "The instructions are confusing." },
+  "crazy": { "translations": ["משוגע"], "level": "intermediate", "example": "That idea is crazy." },
+  "crowded": { "translations": ["עמוס"], "level": "intermediate", "example": "The bus was crowded." },
+  "damaged": { "translations": ["פגום"], "level": "intermediate", "example": "The box arrived damaged." },
+  "delicious": { "translations": ["טעים"], "level": "intermediate", "example": "The cake is delicious." },
+  "disappointed": { "translations": ["מאוכזב"], "level": "intermediate", "example": "I am disappointed with the result." },
+  "dizzy": { "translations": ["סחרחורת"], "level": "intermediate", "example": "He felt dizzy after standing." },
+  "embarrassed": { "translations": ["מבוכה","נבוך"], "level": "intermediate", "example": "She was embarrassed to ask." },
+  "empty": { "translations": ["ריק"], "level": "intermediate", "example": "The bottle is empty." },
+  "famous": { "translations": ["מפורסם"], "level": "intermediate", "example": "He is a famous singer." },
+  "fantastic": { "translations": ["פנטסטי"], "level": "intermediate", "example": "This is a fantastic story." },
+  "favorite": { "translations": ["מועדף"], "level": "intermediate", "example": "Pizza is my favorite food." },
+  "friendly": { "translations": ["ידידותי"], "level": "intermediate", "example": "The guide was friendly.", "partitions": ["friend","-ly"] },
+  "frightening": { "translations": ["מפחיד"], "level": "intermediate", "example": "The movie was frightening." },
+  "handsome": { "translations": ["נאה"], "level": "intermediate", "example": "He is a handsome actor." },
+  "hungry": { "translations": ["רעב"], "level": "intermediate", "example": "I’m hungry." },
+  "impossible": { "translations": ["בלתי אפשרי"], "level": "intermediate", "example": "That task is impossible.", "partitions": ["im-","possible"] },
+  "interesting": { "translations": ["מעניין"], "level": "intermediate", "example": "The lecture was interesting." },
+  "kind": { "translations": ["אדיב","נדיב"], "level": "intermediate", "example": "She is kind to everyone." },
+  "lucky": { "translations": ["בר מזל"], "level": "intermediate", "example": "You are lucky!" },
+  "necessary": { "translations": ["נחוץ"], "level": "intermediate", "example": "It is necessary to try." },
+  "nervous": { "translations": ["לחוץ"], "level": "intermediate", "example": "He is nervous about the interview." },
+  "perfect": { "translations": ["מושלם"], "level": "intermediate", "example": "The results were perfect." },
+  "popular": { "translations": ["פופולרי"], "level": "intermediate", "example": "He is popular at school." },
+  "private": { "translations": ["פרטי"], "level": "intermediate", "example": "This is a private conversation." },
+  "public": { "translations": ["ציבורי"], "level": "intermediate", "example": "A public event was held." },
+  "quiet": { "translations": ["שקט"], "level": "intermediate", "example": "The room is quiet." },
+  "ridiculous": { "translations": ["מטופש","מגוחך"], "level": "intermediate", "example": "That excuse is ridiculous." },
+  "scary": { "translations": ["מפחיד"], "level": "intermediate", "example": "The clown was scary." },
+  "silly": { "translations": ["טיפשי"], "level": "intermediate", "example": "Don’t be silly." },
+  "strange": { "translations": ["מוזר"], "level": "intermediate", "example": "That noise is strange." },
+  "surprised": { "translations": ["מופתע"], "level": "intermediate", "example": "I was surprised to see him." },
+  "terrible": { "translations": ["נורא"], "level": "intermediate", "example": "The service was terrible." },
+  "wonderful": { "translations": ["נפלא"], "level": "intermediate", "example": "It was a wonderful trip." },
+
+  "accidentally": { "translations": ["בטעות"], "level": "intermediate", "example": "I accidentally deleted it.", "partitions": ["accident","-ally"] },
+  "barely": { "translations": ["בקושי"], "level": "intermediate", "example": "I barely slept." },
+  "exactly": { "translations": ["בדיוק"], "level": "intermediate", "example": "That's exactly what I meant." },
+  "suddenly": { "translations": ["פתאום"], "level": "intermediate", "example": "Suddenly it started to rain.", "partitions": ["sudden","-ly"] },
+  "recently": { "translations": ["לאחרונה"], "level": "intermediate", "example": "We met recently." },
+  "seriously": { "translations": ["ברצינות"], "level": "intermediate", "example": "Take this seriously.", "partitions": ["serious","-ly"] },
+  "especially": { "translations": ["במיוחד"], "level": "intermediate", "example": "She loves cats, especially black ones.", "partitions": ["especial","-ly"] },
+
+  "afterward": { "translations": ["אחר כך"], "level": "intermediate", "example": "We talked afterward." },
+  "meanwhile": { "translations": ["בינתיים"], "level": "intermediate", "example": "Meanwhile, I worked alone." },
+  "instead": { "translations": ["במקום זאת"], "level": "intermediate", "example": "Take this instead." },
+  "besides": { "translations": ["חוץ מזה"], "level": "intermediate", "example": "Besides, it’s too late." },
+  "however": { "translations": ["אולם","עם זאת"], "level": "intermediate", "example": "However, I agreed." },
+  "unless": { "translations": ["אלא אם"], "level": "intermediate", "example": "Don’t go unless I call you." },
+
+  "honesty": { "translations": ["יושר"], "level": "intermediate", "example": "Honesty is important.", "partitions": ["honest","-y"] },
+  "membership": { "translations": ["חֲבֵרוּת"], "level": "intermediate", "example": "Your membership has expired.", "partitions": ["member","-ship"] },
+  "punishment": { "translations": ["עונש"], "level": "intermediate", "example": "He feared punishment.", "partitions": ["punish","-ment"] },
+  "relaxation": { "translations": ["הרפיה"], "level": "intermediate", "example": "Music helps relaxation.", "partitions": ["relax","-ation"] },
+  "action": { "translations": ["פעולה"], "level": "intermediate", "example": "It's time for action.", "partitions": ["act","-ion"] },
+  "movement": { "translations": ["תנועה"], "level": "intermediate", "example": "A movement began.", "partitions": ["move","-ment"] },
+  "government": { "translations": ["ממשלה"], "level": "intermediate", "example": "The government changed.", "partitions": ["govern","-ment"] },
+  "agreement": { "translations": ["הסכם"], "level": "intermediate", "example": "We signed an agreement.", "partitions": ["agree","-ment"] },
+  "disagreement": { "translations": ["חילוקי דעות"], "level": "intermediate", "example": "There was a disagreement.", "partitions": ["dis-","agree","-ment"] },
+
+  "teacher": { "translations": ["מורה"], "level": "intermediate", "example": "The teacher is tired.", "partitions": ["teach","-er"] },
+  "reader": { "translations": ["קורא"], "level": "intermediate", "example": "She is a fast reader.", "partitions": ["read","-er"] },
+  "runner": { "translations": ["רץ"], "level": "intermediate", "example": "He is a runner.", "partitions": ["run","-er"] },
+  "seller": { "translations": ["מוכר"], "level": "intermediate", "example": "The seller was friendly.", "partitions": ["sell","-er"] },
+  "speaker": { "translations": ["דובר"], "level": "intermediate", "example": "He is the guest speaker.", "partitions": ["speak","-er"] },
+
+  "anxious": { "translations": ["חרד","לחוץ"], "level": "intermediate", "example": "She felt anxious before the exam." },
+  "ashamed": { "translations": ["מתבייש"], "level": "intermediate", "example": "He looked ashamed." },
+  "confident": { "translations": ["בטוח בעצמו"], "level": "intermediate", "example": "She is confident in her skills." },
+  "curious": { "translations": ["סקרן"], "level": "intermediate", "example": "I'm curious to know more." },
+  "delighted": { "translations": ["מרוצה","שמח מאוד"], "level": "intermediate", "example": "They were delighted by the news." },
+  "determined": { "translations": ["נחרץ"], "level": "intermediate", "example": "She is determined to win." },
+  "eager": { "translations": ["להוט","נלהב"], "level": "intermediate", "example": "He is eager to learn." },
+  "embarrassing": { "translations": ["מביך"], "level": "intermediate", "example": "That situation was embarrassing." },
+  "faithful": { "translations": ["נאמנ/ה"], "level": "intermediate", "example": "A faithful friend is rare.", "partitions": ["faith","-ful"] },
+  "fearless": { "translations": ["חסר פחד"], "level": "intermediate", "example": "She's fearless in battle.", "partitions": ["fear","-less"] },
+  "generous": { "translations": ["נדיב"], "level": "intermediate", "example": "He is a generous person." },
+  "grateful": { "translations": ["אסיר תודה"], "level": "intermediate", "example": "I'm grateful for your help.", "partitions": ["grat(e)","-ful"] },
+  "harmful": { "translations": ["מזיק"], "level": "intermediate", "example": "Smoking is harmful to health.", "partitions": ["harm","-ful"] },
+  "helpful": { "translations": ["מועיל"], "level": "intermediate", "example": "Your advice was helpful.", "partitions": ["help","-ful"] },
+  "hopeless": { "translations": ["חסר תקווה"], "level": "intermediate", "example": "He felt hopeless.", "partitions": ["hope","-less"] },
+  "jealous": { "translations": ["מקנא"], "level": "intermediate", "example": "She is jealous of her sister." },
+  "polite": { "translations": ["מנומס"], "level": "intermediate", "example": "He is always polite." },
+  "rude": { "translations": ["גס רוח", "חצוף"], "level": "intermediate", "example": "Don't be rude!" },
+  "satisfied": { "translations": ["מרוצה", "מסופק"], "level": "intermediate", "example": "We are satisfied with the results." },
+  "shy": { "translations": ["ביישן"], "level": "intermediate", "example": "She is shy with new people." },
+  "talented": { "translations": ["מוכשר"], "level": "intermediate", "example": "She is a talented artist." },
+  "upset": { "translations": ["עצוב","מוטרד"], "level": "intermediate", "example": "He looked upset." },
+  "worried": { "translations": ["מודאג"], "level": "intermediate", "example": "I’m worried about the test." },
+
+  "barefoot": { "translations": ["יחף"], "level": "intermediate", "example": "He walked barefoot.", "partitions": ["bare","foot"] },
+  "downtown": { "translations": ["מרכז העיר"], "level": "intermediate", "example": "I work downtown.", "partitions": ["down","town"] },
+  "everywhere": { "translations": ["בכל מקום"], "level": "intermediate", "example": "I looked everywhere." },
+  "forward": { "translations": ["קדימה"], "level": "intermediate", "example": "Step forward." },
+  "backward": { "translations": ["אחורה"], "level": "intermediate", "example": "Don't move backward." },
+
+  "even though": { "translations": ["למרות שׁ"], "level": "intermediate", "example": "Even though it rained, we left." },
+  "as long as": { "translations": ["כל עוד"], "level": "intermediate", "example": "You can stay as long as you want." },
+  "in case": { "translations": ["במקרה"], "level": "intermediate", "example": "Take a jacket in case it gets cold." },
+  "as a result": { "translations": ["כתוצאה מכך"], "level": "intermediate", "example": "As a result, sales increased." },
+  "at least": { "translations": ["לפחות"], "level": "intermediate", "example": "At least I tried." },
+  "for example": { "translations": ["לדוגמה"], "level": "intermediate", "example": "For example, this one works." },
+
+  "difference": { "translations": ["הבדל"], "level": "intermediate", "example": "What’s the difference?", "partitions": ["differ","-ence"] },
+  "performance": { "translations": ["ביצוע","הופעה"], "level": "intermediate", "example": "The performance was great.", "partitions": ["perform","-ance"] },
+  "importance": { "translations": ["חשיבות"], "level": "intermediate", "example": "The importance is clear.", "partitions": ["important","-ce"] },
+  "appearance": { "translations": ["מראה","הופעה"], "level": "intermediate", "example": "Her appearance changed.", "partitions": ["appear","-ance"] },
+  "knowledge": { "translations": ["ידע"], "level": "intermediate", "example": "Knowledge is power.", "partitions": ["know","-ledge"] },
+
+  "educational": { "translations": ["חינוכי"], "level": "intermediate", "example": "An educational game.", "partitions": ["educate","-ional"] },
+  "national": { "translations": ["לאומי"], "level": "intermediate", "example": "A national holiday.", "partitions": ["nation","-al"] },
+  "personal": { "translations": ["אישי"], "level": "intermediate", "example": "This is a personal matter.", "partitions": ["person","-al"] },
+  "powerful": { "translations": ["עוצמתי"], "level": "intermediate", "example": "A powerful tool.", "partitions": ["power","-ful"] },
+  "stressful": { "translations": ["מלחיץ"], "level": "intermediate", "example": "This job is stressful.", "partitions": ["stress","-ful"] },
+  "meaningful": { "translations": ["בעל משמעות"], "level": "intermediate", "example": "This is a meaningful gift.", "partitions": ["meaning","-ful"] },
+  "endless": { "translations": ["אין סופי"], "level": "intermediate", "example": "The road seems endless.", "partitions": ["end","-less"] },
+  "carefully": { "translations": ["בזהירות"], "level": "intermediate", "example": "Drive carefully.", "partitions": ["careful","-ly"] },
+  "softly": { "translations": ["ברכות"], "level": "intermediate", "example": "He spoke softly.", "partitions": ["soft","-ly"] },
+  "simply": { "translations": ["בפשטות"], "level": "intermediate", "example": "Just say it simply.", "partitions": ["simple","-ly"] },
+
+  "curiosity": { "translations": ["סקרנות"], "level": "intermediate", "example": "Curiosity leads to learning.", "partitions": ["curious","-ity"] },
+  "happiness": { "translations": ["אושר"], "level": "intermediate", "example": "Happiness is priceless.", "partitions": ["happy","-ness"] },
+  "sadness": { "translations": ["עצבות"], "level": "intermediate", "example": "His sadness was obvious.", "partitions": ["sad","-ness"] },
+  "darkness": { "translations": ["חושך"], "level": "intermediate", "example": "Darkness fell quickly.", "partitions": ["dark","-ness"] },
+  "loneliness": { "translations": ["בדידות"], "level": "intermediate", "example": "Loneliness can hurt.", "partitions": ["lonely","-ness"] },
+
+  "unpredictable": {
+    "translations": ["בלתי צפוי", "לא צפוי"],
+    "level": "advanced",
+    "example": "The weather here is unpredictable.",
+    "partitions": ["un-", "predict", "-able"]
+  },
+  "unacceptable": {
+    "translations": ["בלתי קביל", "לא קביל"],
+    "level": "advanced",
+    "example": "This behavior is unacceptable.",
+    "partitions": ["un-", "accept", "-able"]
+  },
+  "unavoidable": {
+    "translations": ["בלתי נמנע"],
+    "level": "advanced",
+    "example": "That result was unavoidable.",
+    "partitions": ["un-", "avoid", "-able"]
+  },
+  "incredible": {
+    "translations": ["מדהים","לא ייאמן"],
+    "level": "advanced",
+    "example": "That trick was incredible.",
+    "partitions": ["in-", "credible"]
+  },
+  "independent": {
+    "translations": ["עצמאי"],
+    "level": "advanced",
+    "example": "She wants to be independent.",
+    "partitions": ["in-", "dependent"]
+  },
+  "inevitable": {
+    "translations": ["בלתי נמנע"],
+    "level": "advanced",
+    "example": "The end was inevitable.",
+    "partitions": ["in-", "evitable"]
+  },
+  "insufficient": {
+    "translations": ["בלתי מספיק"],
+    "level": "advanced",
+    "example": "The data is insufficient.",
+    "partitions": ["in-", "sufficient"]
+  },
+  "irresponsible": {
+    "translations": ["חסר אחריות"],
+    "level": "advanced",
+    "example": "That was irresponsible behavior.",
+    "partitions": ["ir-", "responsible"]
+  },
+  
+  "immature": {
+    "translations": ["לא בוגר"],
+    "level": "advanced",
+    "example": "That’s a very immature decision.",
+    "partitions": ["im-", "mature"]
+  },
+
+  "motivation": {
+    "translations": ["מוטיבציה"],
+    "level": "advanced",
+    "example": "He lost motivation to continue.",
+    "partitions": ["motiv(e)", "-ation"]
+  },
+  "communication": {
+    "translations": ["תקשורת"],
+    "level": "advanced",
+    "example": "Communication is essential.",
+    "partitions": ["communicate", "-ion"]
+  },
+  
+  "organization": {
+    "translations": ["ארגון"],
+    "level": "advanced",
+    "example": "A strong organization is needed.",
+    "partitions": ["organize", "-ation"]
+  },
+  "development": {
+    "translations": ["פיתוח"],
+    "level": "advanced",
+    "example": "The development took years.",
+    "partitions": ["develop", "-ment"]
+  },
+  "requirement": {
+    "translations": ["דרישה"],
+    "level": "advanced",
+    "example": "This is a basic requirement.",
+    "partitions": ["require", "-ment"]
+  },
+  "investment": {
+    "translations": ["השקעה"],
+    "level": "advanced",
+    "example": "Investment in education is important.",
+    "partitions": ["invest", "-ment"]
+  },
+  "environment": {
+    "translations": ["סביבה"],
+    "level": "advanced",
+    "example": "We must protect the environment.",
+    "partitions": ["environ", "-ment"]
+  },
+
+ 
+  "collaborate": {
+    "translations": ["לשתף פעולה"],
+    "level": "advanced",
+    "example": "They collaborated on the project.",
+    "partitions": ["co(l)-", "labor", "-ate"]
+  },
+  "complicate": {
+    "translations": ["להסבך"],
+    "level": "advanced",
+    "example": "This will only complicate things.",
+    "partitions": ["com-", "plicate"]
+  },
+  "contribute": {
+    "translations": ["לתרום"],
+    "level": "advanced",
+    "example": "Everyone should contribute.",
+    "partitions": ["con-", "tribute"]
+  },
+  "convince": {
+    "translations": ["לשכנע"],
+    "level": "advanced",
+    "example": "Can you convince him?",
+    "partitions": ["con-", "vince"]
+  },
+  "criticize": {
+    "translations": ["לבקר"],
+    "level": "advanced",
+    "example": "Don't criticize others harshly."
+  },
+  "recommend": {
+    "translations": ["להמליץ"],
+    "level": "advanced",
+    "example": "What do you recommend?"
+  },
+
+  "complex": {
+    "translations": ["מורכב"],
+    "level": "advanced",
+    "example": "That's a complex issue."
+  },
+
+  "effective": {
+    "translations": ["יעיל"], 
+    "level": "advanced",
+    "example": "That treatment is effective."
+  },
+
+  "appropriate": {
+    "translations": ["מתאים"],
+    "level": "advanced",
+    "example": "That’s not appropriate behavior."
+  },
+  "extraordinary": {
+    "translations": ["לא רגיל","יוצא דופן"],
+    "level": "advanced",
+    "example": "She has extraordinary talent."
+  },
+
+  "entirely": {
+    "translations": ["לגמרי"],
+    "level": "advanced",
+    "example": "I entirely agree."
+  },
+  "approximately": {
+    "translations": ["בערך"],
+    "level": "advanced",
+    "example": "It costs approximately 50 dollars."
+  },
+ 
+  "frankly": {
+    "translations": ["למען האמת"],
+    "level": "advanced",
+    "example": "Frankly, I disagree."
+  },
+  "simultaneously": {
+    "translations": ["בו זמנית"],
+    "level": "advanced",
+    "example": "They spoke simultaneously.",
+    "partitions": ["simultan(e)","-ously"]
+  },
+
+  "transformation": {
+    "translations": ["שינוי","השתנות"],
+    "level": "advanced",
+    "example": "The company went through a major transformation.",
+    "partitions": ["transform", "-ation"]
+  },
+  "transportation": {
+    "translations": ["תחבורה"],
+    "level": "advanced",
+    "example": "Transportation costs are rising.",
+    "partitions": ["transport", "-ation"]
+  },
+  "celebration": {
+    "translations": ["חגיגה"],
+    "level": "advanced",
+    "example": "We held a celebration for his birthday.",
+    "partitions": ["celebrate", "-ion"]
+  },
+  "consideration": {
+    "translations": ["התחשבות","שיקול"],
+    "level": "advanced",
+    "example": "Thank you for your consideration.",
+    "partitions": ["consider", "-ation"]
+  },
+  "explanation": {
+    "translations": ["הסבר"],
+    "level": "advanced",
+    "example": "He gave a clear explanation.",
+    "partitions": ["explain", "-ation"]
+  },
+
+  "interaction": {
+    "translations": ["אינטראקציה","תקשורת"],
+    "level": "advanced",
+    "example": "The interaction was friendly.",
+    "partitions": ["inter-", "action"]
+  },
+  "connection": {
+    "translations": ["חיבור","קשר"],
+    "level": "advanced",
+    "example": "There is a strong connection between them.",
+    "partitions": ["connect", "-ion"]
+  },
+  "attention": {
+    "translations": ["תשומת לב"],
+    "level": "advanced",
+    "example": "Pay attention to the instructions.",
+    "partitions": ["attend", "-ion"]
+  },
+  "reaction": {
+    "translations": ["תגובה"],
+    "level": "advanced",
+    "example": "His reaction surprised me.",
+    "partitions": ["re-", "action"]
+  },
+
+  "coexist": {
+    "translations": ["לחיות יחד","לדון במשותף"],
+    "level": "advanced",
+    "example": "Different cultures can coexist.",
+    "partitions": ["co-", "exist"]
+  },
+  "cooperate": {
+    "translations": ["לשתף פעולה"],
+    "level": "advanced",
+    "example": "We must cooperate for peace.",
+    "partitions": ["co-", "operate"]
+  },
+  "coordinate": {
+    "translations": ["לתאם"],
+    "level": "advanced",
+    "example": "We need to coordinate our schedules.",
+    "partitions": ["co-", "ordinate"]
+  },
+
+  "motivate": {
+    "translations": ["לדרבן"],
+    "level": "advanced",
+    "example": "Teachers should motivate students.",
+    "partitions": ["motiv(e)", "-ate"]
+  },
+  "dominate": {
+    "translations": ["לשלוט"],
+    "level": "advanced",
+    "example": "One team dominated the match.",
+    "partitions": ["domin(e)", "-ate"]
+  },
+  "evaluate": {
+    "translations": ["להעריך"],
+    "level": "advanced",
+    "example": "We need to evaluate the risks.",
+    "partitions": ["evalu(e)", "-ate"]
+  },
+  "negotiate": {
+    "translations": ["לנהל משא ומתן"],
+    "level": "advanced",
+    "example": "They negotiated a better deal."
+  },
+
+  "remarkable": {
+    "translations": ["ראוי לציון","יוצא דופן"],
+    "level": "advanced",
+    "example": "She made remarkable progress.",
+    "partitions": ["remark", "-able"]
+  },
+
+  "responsible": {
+    "translations": ["אחראי"],
+    "level": "advanced",
+    "example": "He is responsible for the team.",
+    "partitions": ["respons(e)", "-ible"]
+  },
+  "predictable": {
+    "translations": ["צפוי"],
+    "level": "advanced",
+    "example": "The ending was predictable.",
+    "partitions": ["predict", "-able"]
+  },
+
+  "impressive": {
+    "translations": ["מרשים"],
+    "level": "advanced",
+    "example": "The show was impressive.",
+    "partitions": ["im-", "press", "-ive"]
+  },
+  "persuasive": {
+    "translations": ["משכנע"],
+    "level": "advanced",
+    "example": "She gave a persuasive speech.",
+    "partitions": ["per-", "suade", "-ive"]
+  },
+  "creative": {
+    "translations": ["יצירתי"],
+    "level": "advanced",
+    "example": "He has a creative mind.",
+    "partitions": ["create", "-ive"]
+  },
+  "competitive": {
+    "translations": ["תחרותי"],
+    "level": "advanced",
+    "example": "The market is highly competitive.",
+    "partitions": ["compete", "-itive"]
+  },
+
+  "generally": {
+    "translations": ["בדרך כלל"],
+    "level": "advanced",
+    "example": "Generally speaking, it's fine."
+  },
+  "specifically": {
+    "translations": ["באופן ספציפי"],
+    "level": "advanced",
+    "example": "I asked specifically for that model.",
+    "partitions": ["specific", "-ally"]
+  },
+  "logically": {
+    "translations": ["באופן הגיוני"],
+    "level": "advanced",
+    "example": "Logically, it's the best option.",
+    "partitions": ["logic", "-ally"]
+  },
+ 
+  "relatively": {
+    "translations": ["יחסית"],
+    "level": "advanced",
+    "example": "It's relatively cheap."
+  },
+  "literally": {
+    "translations": ["מילולית","באמת"],
+    "level": "advanced",
+    "example": "I literally ran for my life."
+  },
+
+  "nevertheless": {
+    "translations": ["עם זאת","למרות זאת"],
+    "level": "advanced",
+    "example": "It was raining; nevertheless, we went out."
+  },
+  "furthermore": {
+    "translations": ["יתרה מזו","בנוסף"],
+    "level": "advanced",
+    "example": "Furthermore, it’s free."
+  },
+  "consequently": {
+    "translations": ["כתוצאה מכך"],
+    "level": "advanced",
+    "example": "Consequently, they had to cancel."
+  },
+  "therefore": {
+    "translations": ["לכן"],
+    "level": "advanced",
+    "example": "It’s late; therefore, we should go."
+  },
+  "whereas": {
+    "translations": ["ואילו"],
+    "level": "advanced",
+    "example": "He loves meat, whereas she is vegan."
+  },
+  "although": {
+    "translations": ["למרות ש"],
+    "level": "advanced",
+    "example": "Although it was cold, we swam."
+  },
+  "despite": {
+    "translations": ["למרות"],
+    "level": "advanced",
+    "example": "Despite the noise, I slept well."
+  },
+
+  "complicated": {
+    "translations": ["מסובך","מורכב"],
+    "level": "advanced",
+    "example": "It’s a complicated situation.",
+    "partitions": ["com-", "plicate", "-ed"]
+  },
+  "sophisticated": {
+    "translations": ["מתוחכם","מעודן"],
+    "level": "advanced",
+    "example": "He uses sophisticated technology.",
+    "partitions": ["sophist", "-icated"]
+  },
+  "advanced": {
+    "translations": ["מתקדם"],
+    "level": "advanced",
+    "example": "This is an advanced course."
+  },
+  "comprehensive": {
+    "translations": ["מקיף"],
+    "level": "advanced",
+    "example": "She wrote a comprehensive report.",
+    "partitions": ["com-", "prehend", "-sive"]
+  },
+  "extensive": {
+    "translations": ["נרחב"],
+    "level": "advanced",
+    "example": "The damage was extensive.",
+    "partitions": ["extend", "-sive"]
+  },
+  "productive": {
+    "translations": ["פרודוקטיבי"],
+    "level": "advanced",
+    "example": "It was a productive meeting.",
+    "partitions": ["produce", "-tive"]
+  },
+  "alternative": {
+    "translations": ["חלופי"],
+    "level": "advanced",
+    "example": "We need an alternative solution.",
+    "partitions": ["alter", "-native"]
+  },
+  "cooperative": {
+    "translations": ["שיתופי"],
+    "level": "advanced",
+    "example": "He was very cooperative.",
+    "partitions": ["co-", "operate", "-ive"]
+  },
+  "progressive": {
+    "translations": ["מתקדם","פרוגרסיבי"],
+    "level": "advanced",
+    "example": "They have progressive ideas.",
+    "partitions": ["progress", "-ive"]
+  },
+  "imaginative": {
+    "translations": ["בעל דמיון"],
+    "level": "advanced",
+    "example": "The design is very imaginative.",
+    "partitions": ["imagine", "-ative"]
+  },
+  "initiative": {
+    "translations": ["יוזמה"],
+    "level": "advanced",
+    "example": "He took the initiative to help.",
+    "partitions": ["initiate", "-ive"]
+  },
+  "sensitive": {
+    "translations": ["רגיש"],
+    "level": "advanced",
+    "example": "Be careful, it’s a sensitive issue."
+  },
+  "specific": {
+    "translations": ["מסוים", "ספציפי"],
+    "level": "advanced",
+    "example": "Can you be more specific?"
+  },
+  "objective": {
+    "translations": ["מטרה","אובייקטיבי"],
+    "level": "advanced",
+    "example": "Stay objective during discussions."
+  },
+  "subjective": {
+    "translations": ["סובייקטיבי"],
+    "level": "advanced",
+    "example": "That’s a subjective opinion."
+  },
+
+  "frequently": {
+    "translations": ["לעיתים קרובות"],
+    "level": "advanced",
+    "example": "She travels frequently.",
+    "partitions": ["frequent", "-ly"]
+  },
+  "rarely": {
+    "translations": ["לעיתים רחוקות"],
+    "level": "advanced",
+    "example": "I rarely eat sweets.",
+    "partitions": ["rare", "-ly"]
+  },
+
+  "eventually": {
+    "translations": ["לבסוף"],
+    "level": "advanced",
+    "example": "Eventually, they reached an agreement.",
+    "partitions": ["eventual", "-ly"]
+  },
+  "continuously": {
+    "translations": ["באופן רציף"],
+    "level": "advanced",
+    "example": "The machine runs continuously.",
+    "partitions": ["continue", "-ously"]
+  },
+  "instantly": {
+    "translations": ["מיד"],
+    "level": "advanced",
+    "example": "He replied instantly.",
+    "partitions": ["instant", "-ly"]
+  },
+  "deliberately": {
+    "translations": ["בכוונה"],
+    "level": "advanced",
+    "example": "He did it deliberately.",
+    "partitions": ["deliberate", "-ly"]
+  },
+  "briefly": {
+    "translations": ["בקצרה"],
+    "level": "advanced",
+    "example": "Let me explain briefly.",
+    "partitions": ["brief", "-ly"]
+  },
+  "accurately": {
+    "translations": ["בדיוק"],
+    "level": "advanced",
+    "example": "He measured it accurately.",
+    "partitions": ["accurate", "-ly"]
+  },
+  "efficiently": {
+    "translations": ["ביעילות"],
+    "level": "advanced",
+    "example": "She works efficiently.",
+    "partitions": ["efficient", "-ly"]
+  },
+
+  "leadership": {
+    "translations": ["מנהיגות"],
+    "level": "advanced",
+    "example": "Good leadership inspires people.",
+    "partitions": ["leader", "-ship"]
+  },
+  "friendship": {
+    "translations": ["חברות"],
+    "level": "advanced",
+    "example": "Their friendship is strong.",
+    "partitions": ["friend", "-ship"]
+  },
+  "relationship": {
+    "translations": ["מערכת יחסים"],
+    "level": "advanced",
+    "example": "Their relationship ended peacefully.",
+    "partitions": ["relate", "-ship"]
+  },
+  "partnership": {
+    "translations": ["שותפות"],
+    "level": "advanced",
+    "example": "They signed a business partnership.",
+    "partitions": ["partner", "-ship"]
+  },
+  "citizenship": {
+    "translations": ["אזרחות"],
+    "level": "advanced",
+    "example": "He applied for citizenship.",
+    "partitions": ["citizen", "-ship"]
+  },
+
+  "enthusiasm": {
+    "translations": ["התלהבות"],
+    "level": "advanced",
+    "example": "She spoke with great enthusiasm."
+  },
+  "optimism": {
+    "translations": ["אופטימיות"],
+    "level": "advanced",
+    "example": "His optimism is contagious."
+  },
+  "realism": {
+    "translations": ["ריאליזם","מציאותיות"],
+    "level": "advanced",
+    "example": "She approaches problems with realism."
+  },
+  "idealism": {
+    "translations": ["אידיאליזם"],
+    "level": "advanced",
+    "example": "His idealism inspires others."
+  },
+  "materialism": {
+    "translations": ["חומרנות"],
+    "level": "advanced",
+    "example": "Modern culture is full of materialism."
+  },
+  "criticism": {
+    "translations": ["ביקורת"],
+    "level": "advanced",
+    "example": "The movie received harsh criticism."
+  },
+  "tourism": {
+    "translations": ["תיירות"],
+    "level": "advanced",
+    "example": "Tourism boosts the economy."
+  },
+
+  "absolutely": {
+    "translations": ["בהחלט"],
+    "level": "advanced",
+    "example": "I absolutely agree."
+  },
+  "undoubtedly": {
+    "translations": ["ללא ספק"],
+    "level": "advanced",
+    "example": "He is undoubtedly talented.",
+    "partitions": ["un-", "doubt", "-edly"]
+  },
+  "naturally": {
+    "translations": ["באופן טבעי"],
+    "level": "advanced",
+    "example": "She acts naturally.",
+    "partitions": ["natural", "-ly"]
+  },
+  "gradually": {
+    "translations": ["בהדרגה"],
+    "level": "advanced",
+    "example": "The temperature dropped gradually."
+  },
+  "accordingly": {
+    "translations": ["בהתאם לכך"],
+    "level": "advanced",
+    "example": "We adjusted accordingly.",
+    "partitions": ["accord", "-ingly"]
+  },
+  
+  "precise": {
+    "translations": ["מדויק"],
+    "level": "advanced",
+    "example": "We need a precise answer.",
+    "partitions": ["pre-", "cise"]
+  },
+  "precisely": {
+    "translations": ["בדיוק"],
+    "level": "advanced",
+    "example": "That is precisely what I meant.",
+    "partitions": ["precise", "-ly"]
+  },
+  "thorough": {
+    "translations": ["יסודי"],
+    "level": "advanced",
+    "example": "She did a thorough investigation."
+  },
+  "thoroughly": {
+    "translations": ["יסודית"],
+    "level": "advanced",
+    "example": "Clean it thoroughly.",
+    "partitions": ["thorough", "-ly"]
+  },
+  "consistent": {
+    "translations": ["עקבִי"],
+    "level": "advanced",
+    "example": "His results are very consistent.",
+    "partitions": ["con-", "sist", "-ent"]
+  },
+  "consistently": {
+    "translations": ["בעקביות"],
+    "level": "advanced",
+    "example": "They improved consistently.",
+    "partitions": ["consistent", "-ly"]
+  },
+  "significant": {
+    "translations": ["משמעותי"],
+    "level": "advanced",
+    "example": "There was a significant change.",
+    "partitions": ["sign", "-ificant"]
+  },
+  "significantly": {
+    "translations": ["באופן משמעותי", "משמעותית"],
+    "level": "advanced",
+    "example": "It improved significantly.",
+    "partitions": ["significant", "-ly"]
+  },
+  "potential": {
+    "translations": ["פוטנציאל"],
+    "level": "advanced",
+    "example": "She showed great potential."
+  },
+  "potentially": {
+    "translations": ["ככל הנראה","בפוטנציה"],
+    "level": "advanced",
+    "example": "It could potentially fail.",
+    "partitions": ["potential", "-ly"]
+  },
+
+  "logical": {
+    "translations": ["לוגי"],
+    "level": "advanced",
+    "example": "His argument is logical.",
+    "partitions": ["logic", "-al"]
+  },
+  "illogical": {
+    "translations": ["לא הגיוני"],
+    "level": "advanced",
+    "example": "This conclusion is illogical.",
+    "partitions": ["il-", "logic", "-al"]
+  },
+  "reasonable": {
+    "translations": ["סביר"],
+    "level": "advanced",
+    "example": "That’s a reasonable suggestion.",
+    "partitions": ["reason", "-able"]
+  },
+  "unreasonable": {
+    "translations": ["לא סביר"],
+    "level": "advanced",
+    "example": "You are being unreasonable.",
+    "partitions": ["un-", "reasonable"]
+  },
+
+  "equality": {
+    "translations": ["שוויון"],
+    "level": "advanced",
+    "example": "They fight for equality.",
+    "partitions": ["equal", "-ity"]
+  },
+  "stability": {
+    "translations": ["יציבות"],
+    "level": "advanced",
+    "example": "Economic stability is important.",
+    "partitions": ["stable", "-ity"]
+  },
+  "creativity": {
+    "translations": ["יצירתיות"],
+    "level": "advanced",
+    "example": "Creativity is encouraged here.",
+    "partitions": ["creative", "-ity"]
+  },
+  "personality": {
+    "translations": ["אישיות"],
+    "level": "advanced",
+    "example": "She has a strong personality.",
+    "partitions": ["person", "-ality"]
+  },
+  "popularity": {
+    "translations": ["פופולריות"],
+    "level": "advanced",
+    "example": "His popularity grew quickly.",
+    "partitions": ["popular", "-ity"]
+  },
+
+  "freedom": {
+    "translations": ["חופש"],
+    "level": "advanced",
+    "example": "Freedom is essential."
+  },
+  "justice": {
+    "translations": ["צדק"],
+    "level": "advanced",
+    "example": "They demand justice."
+  },
+  "identity": {
+    "translations": ["זהות"],
+    "level": "advanced",
+    "example": "Identity shapes behavior.",
+    "partitions": ["ident", "-ity"]
+  },
+  "principle": {
+    "translations": ["עיקרון"],
+    "level": "advanced",
+    "example": "She follows strong principles."
+  },
+  "strategy": {
+    "translations": ["אסטרטגיה"],
+    "level": "advanced",
+    "example": "We need a new strategy."
+  },
+  "concept": {
+    "translations": ["מושג"],
+    "level": "advanced",
+    "example": "The concept is difficult to explain."
+  },
+
+  "tentative": {
+    "translations": ["לא בטוח","נסיוני"],
+    "level": "advanced",
+    "example": "It’s a tentative plan.",
+    "partitions": ["tent", "-ative"]
+  },
+  "relevant": {
+    "translations": ["רלוונטי"],
+    "level": "advanced",
+    "example": "Do you have relevant experience?",
+    "partitions": ["re-", "lev", "-ant"]
+  },
+  "irrelevant": {
+    "translations": ["לא רלוונטי"],
+    "level": "advanced",
+    "example": "That detail is irrelevant.",
+    "partitions": ["ir-", "relevant"]
+  },
+  "efficient": {
+    "translations": ["יעיל"],
+    "level": "advanced",
+    "example": "This method is efficient.",
+    "partitions": ["effici", "-ent"]
+  },
+  "inefficient": {
+    "translations": ["לא יעיל"],
+    "level": "advanced",
+    "example": "The process is inefficient.",
+    "partitions": ["in-", "efficient"]
+  },
+
+  "threat": {
+    "translations": ["איום"],
+    "level": "advanced",
+    "example": "There is a real threat."
+  },
+  "benefit": {
+    "translations": ["תועלת"],
+    "level": "advanced",
+    "example": "Exercise has many benefits."
+  },
+  "challenge": {
+    "translations": ["אתגר"],
+    "level": "advanced",
+    "example": "This is a big challenge."
+  },
+  "opportunity": {
+    "translations": ["הזדמנות"],
+    "level": "advanced",
+    "example": "That was a huge opportunity.",
+    "partitions": ["opportune", "-ity"]
+  },
+  "perception": {
+    "translations": ["תפיסה"],
+    "level": "advanced",
+    "example": "Perception changes over time.",
+    "partitions": ["perceive", "-tion"]
+  },
+  "interpretation": {
+    "translations": ["פרשנות"],
+    "level": "advanced",
+    "example": "His interpretation was wrong.",
+    "partitions": ["interpret", "-ation"]
+  }
+}
