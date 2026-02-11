@@ -15,9 +15,9 @@ try {
 
   env.useLazyBackend = true;
 
-  console.log("🧩 Using ONNX backend:", env.backend);
+  console.log(" Using ONNX backend:", env.backend);
 } catch (err) {
-  console.error("⚠️ Could not set ONNX backend, falling back to WASM:", err);
+  console.error("Could not set ONNX backend, falling back to WASM:", err);
   env.backend = "wasm";
 }
 
@@ -26,11 +26,11 @@ function has(mod) {
   try { require.resolve(mod); return true; } catch { return false; }
 }
 
-console.log("🧪 TRANSFORMERS backend =", env.backend);
-console.log("🧪 onnxruntime-node present:", has("onnxruntime-node"));
-console.log("🧪 onnxruntime-web present:", has("onnxruntime-web"));
-console.log("🧪 Node version =", process.versions.node);
-console.log("🔑 HF token prefix:", (env.HF_TOKEN || "MISSING").slice(0, 8));
+console.log(" TRANSFORMERS backend =", env.backend);
+console.log(" onnxruntime-node present:", has("onnxruntime-node"));
+console.log(" onnxruntime-web present:", has("onnxruntime-web"));
+console.log(" Node version =", process.versions.node);
+console.log(" HF token prefix:", (env.HF_TOKEN || "MISSING").slice(0, 8));
 
 import dotenv from "dotenv";
 dotenv.config();
@@ -70,7 +70,7 @@ app.use((req, _res, next) => {
   next();
 });
 
-app.get("/", (_req, res) => res.send("Word Nerd proxy is running ✅"));
+app.get("/", (_req, res) => res.send("Word Nerd proxy is running "));
 
 app.use("/auth", authRoutes);
 app.use("/translate", translationRoute);
