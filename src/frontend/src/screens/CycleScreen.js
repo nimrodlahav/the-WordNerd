@@ -11,12 +11,12 @@ import {
 } from "react-native";
 import ScreenWrapper from "../../components/ScreenWrapper";
 import { getUserItem, setUserItem } from "../../utils/storage";
-import { initCycle } from "../config/api"; // ✅ added import
+import { initCycle } from "../config/api"; //  added import
 
 export default function CycleScreen({ navigation }) {
   const [cycle, setCycle] = useState(null);
   const [wordScores, setWordScores] = useState({});
-  const [wordProgress, setWordProgress] = useState({}); // ✅ ADD THIS
+  const [wordProgress, setWordProgress] = useState({}); //  ADD THIS
 
   const [loading, setLoading] = useState(true);
 
@@ -36,7 +36,7 @@ if (storedProgress) setWordProgress(storedProgress);
               : storedCycle;
           setCycle(parsed);
         } else {
-          // ✅ If no local cycle, try to initialize a new one from API
+          //  If no local cycle, try to initialize a new one from API
           const token =
   (await getUserItem("token")) ||
   (await AsyncStorage.getItem("token"));
@@ -45,7 +45,7 @@ if (!token) throw new Error("Missing token — please log in again.");
 
           if (!token) throw new Error("Missing token");
 
-          const data = await initCycle(token); // ✅ centralized API call
+          const data = await initCycle(token); //  centralized API call
           if (!data?.batches?.length)
             throw new Error("No batches received from server");
 
@@ -55,7 +55,7 @@ if (!token) throw new Error("Missing token — please log in again.");
 
         if (storedScores) setWordScores(storedScores);
       } catch (err) {
-        console.error("❌ Failed to load cycle:", err);
+        console.error(" Failed to load cycle:", err);
         Alert.alert("Error", err.message || "Could not load cycle data.");
       } finally {
         setLoading(false);
@@ -65,7 +65,7 @@ if (!token) throw new Error("Missing token — please log in again.");
     loadCycle();
   }, []);
 
-  console.log("🧩 CycleScreen cycle:", JSON.stringify(cycle, null, 2));
+  console.log(" CycleScreen cycle:", JSON.stringify(cycle, null, 2));
 
   const handleStartQuiz = () => {
     if (!cycle) return;
