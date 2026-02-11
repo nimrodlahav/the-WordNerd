@@ -46,8 +46,7 @@ const takeReadyFromQueue = (queue, currentBatchIdx, count) => {
   return { readyWords: ready, remainingQueue: remaining };
 };
 
-// Helper: persist learned words uniquely
-// ✅ Correct persistence for mastered words (wipe-out)
+
 const persistLearnedWords = async (newWords = []) => {
   try {
     if (!newWords?.length) return;
@@ -60,9 +59,9 @@ userWords.learnedWords.push(wordStr);
       }
     });
     await setUserItem("userWords", userWords);
-    console.log("✅ Saved mastered words → userWords.learnedWords:", newWords);
+    console.log("Saved mastered words → userWords.learnedWords:", newWords);
   } catch (err) {
-    console.error("❌ Failed to persist userWords:", err);
+    console.error(" Failed to persist userWords:", err);
   }
 };
 
@@ -89,25 +88,21 @@ export default function BatchPreviewScreen({ route, navigation }) {
           (await getUserItem("token")) || (await AsyncStorage.getItem("token"));
         if (!token) throw new Error("Missing token — please log in again.");
 
-        // 🧩 NEW: Get the user’s level
+
         const userLevel = (await getUserItem("level")) || "Beginner";
         console.log("🎯 Loading words for level:", userLevel);
 
-        // 🧩 Option 1: backend returns initial pools per level
         const data = await initCycle(token, userLevel);
 
-        // ✅ Load already-promoted words
         const userWords = (await getUserItem("userWords")) || { learnedWords: [] };
         const promoted = userWords.learnedWords || [];
         const promotedSet = new Set(promoted.map((w) => w.toLowerCase()));
 
-        // ✅ Load spaced-repetition metadata & queue
         const wordMeta = (await getUserItem("wordMeta")) || {};
         const prevCyclesBatchCount =
           (await getUserItem("completedBatchCount")) || 0;
         const currentBatchIndex = prevCyclesBatchCount;
 
-        // ✅ Apply delay gating (legacy safeguard—fresh pool only)
         const filteredBatchesByDelay = data.batches.map((b) => ({
           ...b,
           words: b.words.filter((w) => {
@@ -121,7 +116,6 @@ export default function BatchPreviewScreen({ route, navigation }) {
           }),
         }));
 
-        // ✅ Filter out promoted & non-matching level
         const filteredBatches = filteredBatchesByDelay.map((b) => ({
           ...b,
           words: b.words.filter((w) => {
@@ -137,7 +131,7 @@ export default function BatchPreviewScreen({ route, navigation }) {
         if (!filteredBatches?.length)
           throw new Error("No batches received from server");
 
-        // ✅ Merge in READY review words (FIFO) before fresh words, per batch (size=30)
+        // Merge in READY review words (FIFO) before fresh words, per batch (size=30)
         const queue0 = await loadQueue();
         let workingQueue = [...queue0];
         const SIZE = 30;
@@ -176,7 +170,7 @@ export default function BatchPreviewScreen({ route, navigation }) {
         await setUserItem("batchesDoneInThisCycle", 0); // reset per-cycle batch counter
         await setUserItem("removedWordsThisCycle", []); // reset wipe-outs at cycle start
 
-        // 🧪 Debug log metadata and filtering
+        //  Debug log metadata and filtering
         setDebug({
           from: "API",
           batchCount: mergedBatches.length,
@@ -187,9 +181,9 @@ export default function BatchPreviewScreen({ route, navigation }) {
         });
 
         console.log("🧹 Removed promoted words:", promoted.length);
-        console.log("🧩 Batch[0] size:", mergedBatches[0]?.words?.length);
+        console.log("Batch[0] size:", mergedBatches[0]?.words?.length);
       } catch (err) {
-        console.error("❌ initCycle error:", err);
+        console.error(" initCycle error:", err);
         Alert.alert("Error", err.message);
       } finally {
         setLoading(false);
@@ -203,7 +197,7 @@ export default function BatchPreviewScreen({ route, navigation }) {
     try {
       setLoading(true);
 
-      // ✅ Count it as wiped out for this cycle (for auto-known promotion after quiz)
+      // Count it as wiped out for this cycle (for auto-known promotion after quiz)
       const removed = (await getUserItem("removedWordsThisCycle")) || [];
       if (!removed.includes(word)) {
         removed.push(word);
@@ -214,10 +208,10 @@ export default function BatchPreviewScreen({ route, navigation }) {
         (await getUserItem("token")) || (await AsyncStorage.getItem("token"));
       if (!token) throw new Error("Missing token — please log in again.");
 
-      // 🔹 Tell backend to replace this word
+      //  Tell backend to replace this word
       const cycleData = await replaceKnown(batch.id, [word], token);
 
-      // 🔹 Update local batch & batches
+      //  Update local batch & batches
       const newBatch = { ...batch, words: cycleData.finalBatch };
       const newBatches = [...batches];
       newBatches[batchIndex] = newBatch;
@@ -226,15 +220,15 @@ export default function BatchPreviewScreen({ route, navigation }) {
       setBatches(newBatches);
       setRemovedWords((prev) => [...prev, word]);
 
-      // 🔹 Persist learned word (wipe-out)
+      //  Persist learned word (wipe-out)
       await persistLearnedWords([word]);
 
-      // 🔹 Remove it from reviewQueue if it exists there
+      //  Remove it from reviewQueue if it exists there
       const q = await loadQueue();
       const q2 = q.filter((it) => it.word !== word);
       await saveQueue(q2);
 
-      // 🔹 Update cycle cache
+      //  Update cycle cache
       const storedCycle = (await getUserItem("currentCycle")) || {};
       const updatedCycle = { ...storedCycle, batches: newBatches };
       await setUserItem("currentCycle", updatedCycle);
@@ -246,7 +240,7 @@ export default function BatchPreviewScreen({ route, navigation }) {
         queueLen: q2.length,
       }));
     } catch (err) {
-      console.error("❌ handleRemove error:", err);
+      console.error(" handleRemove error:", err);
       Alert.alert("Error", err.message);
     } finally {
       setLoading(false);
@@ -265,9 +259,9 @@ export default function BatchPreviewScreen({ route, navigation }) {
       const updatedCycle = { ...storedCycle, batches };
       await setUserItem("currentCycle", updatedCycle);
       await setUserItem("cycleActive", true);
-      // 🧹 Reset old quiz progress so restart is clean
-// 🔥 Reset cycle-related state but keep persistent learning history
-// 🚫 DO NOT delete cycle — just ensure fresh quiz start
+      // Reset old quiz progress so restart is clean
+// Reset cycle-related state but keep persistent learning history
+// DO NOT delete cycle — just ensure fresh quiz start
 await removeUserItem("quiz_progress");
 await removeUserItem("wordProgress");
 await removeUserItem("wordScores");
@@ -293,7 +287,7 @@ await setUserItem("cycleActive", true); // cycle stays active
 
       setDebug((d) => ({ ...d, navToQuiz: true, totalBatches: batches.length }));
     } catch (err) {
-      console.error("❌ handleContinue error:", err);
+      console.error(" handleContinue error:", err);
       Alert.alert("Error", err.message);
     }
   };
@@ -321,7 +315,7 @@ await setUserItem("cycleActive", true); // cycle stays active
 
   return (
     <ScreenWrapper navigation={navigation} showBack>
-      {/* 🧩 DEBUG PANEL
+      {/*  DEBUG PANEL
       <View style={styles.debugBox}>
         <Text style={styles.debugText}>Debug:</Text>
         <Text style={styles.debugText}>From: {debug.from}</Text>
@@ -422,12 +416,12 @@ grid: {
 },
 
 row: {
-  flex: 1,                  // ✅ ensures full width for each row
+  flex: 1,                  // ensures full width for each row
   justifyContent: "flex-start",
 },
 
 wordCard: {
-  flexGrow: 0,              // ✅ prevents shrinking/stretching
+  flexGrow: 0,              //  prevents shrinking/stretching
   flexShrink: 0,
   width: "31%",             // keep approximate width
   margin: 4,
@@ -449,12 +443,12 @@ wordCard: {
 
 button: {
   backgroundColor: "#ff387a",
-  paddingVertical: 14,   // 🟢 back to normal, not oversized
+  paddingVertical: 14,   //  back to normal, not oversized
   paddingHorizontal: 40,
   borderRadius: 10,
-  marginTop: 60,         // 🟢 adds extra space above grid
-  marginBottom: 40,      // 🟢 ensures space below bottom edge
-  alignSelf: "center",   // 🟢 keeps it centered
+  marginTop: 60,       
+  marginBottom: 40,      
+  alignSelf: "center",   
 },
 
 
@@ -466,32 +460,4 @@ button: {
 
 
 
-  // debugBox: {
-  //   position: "absolute",
-  //   top: 20,
-  //   right: 10,
-  //   backgroundColor: "rgba(0,0,0,0.4)",
-  //   padding: 8,
-  //   borderRadius: 8,
-  //   zIndex: 99,
-  // },
-
-  // debugText: {
-  //   color: "#00ffff",
-  //   fontSize: 12,
-  //   fontFamily: "monospace",
-  // },
-
-  // debugMeta: {
-  //   marginTop: 2,
-  //   backgroundColor: "#00000055",
-  //   paddingHorizontal: 4,
-  //   borderRadius: 4,
-  // },
-
-  // debugMetaText: {
-  //   fontSize: 9,
-  //   color: "#00ffff",
-  //   fontFamily: "monospace",
-  // },
 });
