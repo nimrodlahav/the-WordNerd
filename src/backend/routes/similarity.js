@@ -1,4 +1,4 @@
-// routes/similarity.js
+
 import express from "express";
 import { pipeline } from "@xenova/transformers";
 
@@ -7,13 +7,13 @@ const router = express.Router();
 let embedder = null;
 async function loadEmbedder() {
   if (!embedder) {
-    console.log("🧠 Loading multilingual sentence-embedder...");
+    console.log(" Loading multilingual sentence-embedder...");
     // Multilingual ST model aligned across 50+ languages (incl. Hebrew)
     embedder = await pipeline(
       "feature-extraction",
       "Xenova/paraphrase-multilingual-MiniLM-L12-v2"
     );
-    console.log("✅ Multilingual embedder ready!");
+    console.log("Multilingual embedder ready");
   }
   return embedder;
 }
@@ -59,7 +59,7 @@ if (raw >= 0.89) feedback = "Correct or very close";
 else if (raw >= 0.67) feedback = "Close";
 
 console.log(
-  `📊 ${source} vs ${target} | cosine: ${raw.toFixed(3)}`
+  ` ${source} vs ${target} | cosine: ${raw.toFixed(3)}`
 );
 
 res.json({
@@ -71,7 +71,7 @@ res.json({
 });
 
   } catch (err) {
-    console.error("⚠️ Similarity error:", err);
+    console.error("Similarity error:", err);
     res.status(500).json({ error: err.message });
   }
 });
