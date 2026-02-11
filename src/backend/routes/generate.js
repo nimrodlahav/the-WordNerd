@@ -16,9 +16,9 @@ const vocabData = JSON.parse(fs.readFileSync(vocabPath, "utf8"));
 let textGenerator = null;
 async function getGenerator() {
   if (!textGenerator) {
-    console.log("🧠 Loading text generation model...");
+    console.log(" Loading text generation model...");
     textGenerator = await pipeline("text-generation", "Xenova/distilgpt2");
-    console.log("✅ Sentence generator ready!");
+    console.log(" Sentence generator ready!");
   }
   return textGenerator;
 }
@@ -54,7 +54,7 @@ router.post("/", async (req, res) => {
       generatedSentence = null; // if it’s junk, discard
     }
   } catch (err) {
-    console.error("⚠️ Generation error:", err);
+    console.error(" Generation error:", err);
   }
 
   // fallback
