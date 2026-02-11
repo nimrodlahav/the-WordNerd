@@ -25,7 +25,7 @@ export default function HomeScreen({ navigation }) {
       const keys = ["token", "user", "mode", "level", "currentCycle", "cycleActive"];
       const store = {};
       for (let k of keys) store[k] = await getUserItem(k);
-      console.log("🧩 STORAGE SNAPSHOT:", store);
+      console.log(" STORAGE SNAPSHOT:", store);
     };
     debugStorage();
   }, []);
@@ -98,7 +98,7 @@ await AsyncStorage.removeItem("token");
         <Text style={styles.logoutText}>Logout</Text>
       </TouchableOpacity>
 
-      {/* 🎨 Main layout */}
+      {/*  Main layout */}
       <View style={styles.center}>
         {/* Logo */}
         <Image
@@ -165,10 +165,10 @@ const styles = StyleSheet.create({
   },
 center: {
   flex: 1,
-  justifyContent: "flex-start", // keep logo at top part
+  justifyContent: "flex-start", 
   alignItems: "center",
   backgroundColor: "#020c45",
-    paddingTop: 180,               // ⬅️ move logo downward (tweak 100–140 as needed)
+    paddingTop: 180,               
 
 },
 
@@ -177,8 +177,8 @@ menuContainer: {
   justifyContent: "space-around",
   alignItems: "flex-end",
   width: "90%",
-  position: "absolute",  // allows positioning relative to the screen
-  bottom: 60,             // ⬅️ move the whole row lower (adjust as needed)
+  position: "absolute", 
+  bottom: 60,             
 },
   logo: {
     width: 250,
