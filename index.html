@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WordNerd — AI Vocabulary Builder</title>
+  <style>
+    /* ── Reset & base ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:        #1a104a;
+      --surface:   #231560;
+      --border:    rgba(255,255,255,0.10);
+      --text:      #f0eeff;
+      --muted:     #9d93cc;
+      --accent:    #ff3578;
+      --accent-dk: #e0205f;
+      --radius:    12px;
+      --gap:       2rem;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── Layout helpers ── */
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 2.5rem;
+    }
+
+    section { padding: 4rem 0; }
+    section + section { border-top: 1px solid var(--border); }
+
+    h2 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.4rem;
+    }
+
+    .section-label {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.6rem;
+    }
+
+    p { color: var(--muted); max-width: 60ch; }
+
+    /* ── Nav ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(26, 16, 74, 0.88);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    nav .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 62px;
+    }
+
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-weight: 700;
+      font-size: 1.15rem;
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .nav-brand img { width: 34px; height: 34px; border-radius: 6px; }
+
+    .nav-links {
+      display: flex;
+      gap: 1.8rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 0.875rem;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+    .nav-links a:hover { color: var(--text); }
+
+    /* ── Hero ── */
+    #hero {
+      padding: 5rem 0 4rem;
+      border-top: none;
+    }
+
+    .hero-inner {
+      display: grid;
+      grid-template-columns: 1fr 280px;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--accent);
+      background: rgba(255, 53, 120, 0.12);
+      border: 1px solid rgba(255, 53, 120, 0.3);
+      border-radius: 999px;
+      padding: 0.25rem 0.75rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero-tag::before {
+      content: "";
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      line-height: 1.1;
+      margin-bottom: 1rem;
+    }
+
+    h1 span { color: var(--accent); }
+
+    .hero-desc {
+      font-size: 1.05rem;
+      color: var(--muted);
+      max-width: 50ch;
+      margin-bottom: 2rem;
+    }
+
+    .btn-row { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.6rem 1.25rem;
+      border-radius: 8px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: opacity 0.15s, background 0.15s;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+    }
+    .btn-primary:hover { background: var(--accent-dk); }
+
+    .btn-ghost {
+      background: transparent;
+      color: var(--text);
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+    .btn-ghost:hover { background: rgba(255,255,255,0.07); }
+
+    .hero-icon img {
+      width: 280px;
+      height: 280px;
+      border-radius: 48px;
+      box-shadow: none;
+    }
+
+    /* ── About ── */
+    .about-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.25rem;
+      margin-top: 2rem;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+    }
+
+    .card h3 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      margin-bottom: 0.35rem;
+    }
+
+    .card p {
+      font-size: 0.855rem;
+      max-width: none;
+    }
+
+    /* ── Gallery ── */
+    .gallery-desc {
+      margin-bottom: 2rem;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+
+    .gallery-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+
+    .gallery-item img,
+    .gallery-item video {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+      aspect-ratio: 9/18;
+    }
+
+    .gallery-caption {
+      padding: 0.75rem 1rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+
+    /* ── Stack ── */
+    .stack-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .stack-group h3 {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin-bottom: 0.6rem;
+    }
+
+    .pill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+
+    .pill {
+      font-size: 0.8rem;
+      font-weight: 500;
+      padding: 0.25rem 0.65rem;
+      border-radius: 999px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      color: var(--text);
+    }
+
+    /* ── Docs ── */
+    .docs-list {
+      list-style: none;
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .docs-list li a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 1.25rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      text-decoration: none;
+      color: var(--text);
+      font-size: 0.9rem;
+      font-weight: 600;
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+
+    .docs-list li a:hover {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(255,53,120,0.12);
+    }
+
+    .docs-list .doc-meta {
+      font-size: 0.78rem;
+      color: var(--muted);
+      font-weight: 400;
+    }
+
+    .arrow { color: var(--muted); font-size: 1rem; }
+
+    /* ── Download ── */
+    .download-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 2rem;
+      margin-top: 2rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .download-box .dl-text { flex: 1; min-width: 200px; }
+    .download-box .dl-text h3 { font-size: 1rem; font-weight: 700; margin-bottom: 0.35rem; }
+    .download-box .dl-text p { font-size: 0.855rem; max-width: none; }
+    .download-box .dl-actions { display: flex; flex-direction: column; gap: 0.6rem; flex-shrink: 0; }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2rem 0;
+    }
+
+    footer .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    footer p {
+      font-size: 0.8rem;
+      color: var(--muted);
+      max-width: none;
+    }
+
+    footer a { color: var(--accent); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+
+    /* ── Responsive ── */
+    @media (max-width: 760px) {
+      .hero-inner { grid-template-columns: 1fr; }
+      .hero-icon { display: none; }
+      .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+      nav .nav-links { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── Navigation ── -->
+<nav>
+  <div class="container">
+    <a href="#hero" class="nav-brand">
+      <img src="icon.png" alt="the WordNerd icon" />
+      the WordNerd
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#stack">Stack</a></li>
+      <li><a href="#docs">Docs</a></li>
+      <li><a href="#download">Download</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ── Hero ── -->
+<section id="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <div>
+        <div class="hero-tag">Mobile · Hebrew → English · AI</div>
+        <h1>Stop drilling.<br /><span>Start learning.</span></h1>
+        <p class="hero-desc">
+          WordNerd is a vocab app built for Hebrew speakers learning English. It uses multilingual
+          AI embeddings to give real feedback — not just right/wrong, but how close you actually were.
+        </p>
+        <div class="btn-row">
+          <a href="#download" class="btn btn-primary">Get the app</a>
+          <a href="#about" class="btn btn-ghost">Learn more</a>
+        </div>
+      </div>
+      <div class="hero-icon">
+        <img src="word_nerd_front/assets/images/logo.png" alt="the WordNerd logo" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── About ── -->
+<section id="about">
+  <div class="container">
+    <p class="section-label">About</p>
+    <h2>Why WordNerd?</h2>
+    <p>
+      Most flashcard apps are just binary — right or wrong. But language doesn't work like that.
+      WordNerd scores your translations on a spectrum, so "friendship" for "companionship" isn't
+      a failure, it's close.
+    </p>
+
+    <div class="about-grid">
+      <div class="card">
+        <h3>3-day cycles</h3>
+        <p>Each word goes through daily quizzes over 3 days. Once you've scored high enough across all three, it's gone from your queue.</p>
+      </div>
+      <div class="card">
+        <h3>Non-binary feedback</h3>
+        <p>Your translation gets embedded with a multilingual transformer and compared to the target word. The score reflects how close you actually were.</p>
+      </div>
+      <div class="card">
+        <h3>Leveled word lists</h3>
+        <p>Words are split into Beginner / Intermediate / Advanced. You pick how many batches per day — fits a 5-minute session or a longer one.</p>
+      </div>
+      <div class="card">
+        <h3>Skip what you know</h3>
+        <p>Before each cycle starts, you can tap out the words you already know. No time wasted on things you've already got down.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Gallery ── -->
+<section id="gallery">
+  <div class="container">
+    <p class="section-label">Gallery</p>
+    <h2>See it in action</h2>
+    <p class="gallery-desc">Screenshots and demo clips from the live app.</p>
+
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="Screenshots/WhatsApp Image 2025-11-10 at 11.57.26.jpeg" alt="Home screen" loading="lazy" />
+        <div class="gallery-caption">Home</div>
+      </div>
+      <div class="gallery-item">
+        <img src="gifs/quiz.gif" alt="Quiz demo" loading="lazy" />
+        <div class="gallery-caption">Quiz</div>
+      </div>
+      <div class="gallery-item">
+        <img src="gifs/initializeCycle.gif" alt="Cycle initialization demo" loading="lazy" />
+        <div class="gallery-caption">Cycle init</div>
+      </div>
+      <div class="gallery-item">
+        <img src="gifs/displayWords.gif" alt="Word display demo" loading="lazy" />
+        <div class="gallery-caption">Word display</div>
+      </div>
+      <div class="gallery-item">
+        <img src="Screenshots/WhatsApp Image 2025-11-10 at 11.57.11 (2).jpeg" alt="Quiz result screen" loading="lazy" />
+        <div class="gallery-caption">Quiz result</div>
+      </div>
+      <div class="gallery-item">
+        <img src="Screenshots/WhatsApp Image 2025-11-10 at 11.57.27.jpeg" alt="App screen" loading="lazy" />
+        <div class="gallery-caption">Progress</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Stack ── -->
+<section id="stack">
+  <div class="container">
+    <p class="section-label">Tech Stack</p>
+    <h2>What's under the hood</h2>
+    <p>React Native frontend, Node/Express backend, SQLite for storage, and Transformers.js running the AI side via ONNX.</p>
+
+    <div class="stack-grid">
+      <div class="stack-group">
+        <h3>Frontend</h3>
+        <div class="pill-list">
+          <span class="pill">React Native</span>
+          <span class="pill">Expo</span>
+          <span class="pill">TypeScript</span>
+          <span class="pill">React Navigation</span>
+          <span class="pill">AsyncStorage</span>
+        </div>
+      </div>
+      <div class="stack-group">
+        <h3>Backend</h3>
+        <div class="pill-list">
+          <span class="pill">Node.js</span>
+          <span class="pill">Express</span>
+          <span class="pill">SQLite</span>
+          <span class="pill">JWT Auth</span>
+          <span class="pill">bcrypt</span>
+        </div>
+      </div>
+      <div class="stack-group">
+        <h3>AI / ML</h3>
+        <div class="pill-list">
+          <span class="pill">Transformers.js</span>
+          <span class="pill">ONNX Runtime</span>
+          <span class="pill">MiniLM-L12-v2</span>
+          <span class="pill">Cosine similarity</span>
+        </div>
+      </div>
+      <div class="stack-group">
+        <h3>Build & Deploy</h3>
+        <div class="pill-list">
+          <span class="pill">EAS Build</span>
+          <span class="pill">Render</span>
+          <span class="pill">Vercel</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Docs ── -->
+<section id="docs">
+  <div class="container">
+    <p class="section-label">Documentation</p>
+    <h2>References &amp; resources</h2>
+    <p>The main libraries and models the app is built on.</p>
+
+    <ul class="docs-list">
+      <li>
+        <a href="https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2" target="_blank" rel="noopener">
+          <span>
+            paraphrase-multilingual-MiniLM-L12-v2
+            <br /><span class="doc-meta">HuggingFace · Multilingual sentence embeddings model</span>
+          </span>
+          <span class="arrow">↗</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://huggingface.co/docs/transformers.js" target="_blank" rel="noopener">
+          <span>
+            Transformers.js
+            <br /><span class="doc-meta">HuggingFace · Run transformer models in JavaScript via ONNX</span>
+          </span>
+          <span class="arrow">↗</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://docs.expo.dev" target="_blank" rel="noopener">
+          <span>
+            Expo Documentation
+            <br /><span class="doc-meta">Expo · React Native toolchain and build system</span>
+          </span>
+          <span class="arrow">↗</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://docs.expo.dev/build/introduction/" target="_blank" rel="noopener">
+          <span>
+            EAS Build
+            <br /><span class="doc-meta">Expo · Cloud build service for iOS and Android</span>
+          </span>
+          <span class="arrow">↗</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://onnxruntime.ai/docs/" target="_blank" rel="noopener">
+          <span>
+            ONNX Runtime
+            <br /><span class="doc-meta">Microsoft · Cross-platform ML inference engine</span>
+          </span>
+          <span class="arrow">↗</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/nimrodlahav/the-WordNerd" target="_blank" rel="noopener">
+          <span>
+            GitHub Repository
+            <br /><span class="doc-meta">Source code, architecture notes, and issue tracker</span>
+          </span>
+          <span class="arrow">↗</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ── Download ── -->
+<section id="download">
+  <div class="container">
+    <p class="section-label">Download</p>
+    <h2>Get WordNerd</h2>
+    <p>Not on the Play Store yet — just message me and I'll send the APK.</p>
+
+    <div class="download-box">
+      <div class="dl-text">
+        <h3>Android APK</h3>
+        <p>
+          Built with Expo EAS. Send me a message on LinkedIn and I'll get the latest build to you directly.
+        </p>
+      </div>
+      <div class="dl-actions">
+        <a
+          href="https://www.linkedin.com/in/nimrod-lahav-03793523b/"
+          target="_blank"
+          rel="noopener"
+          class="btn btn-primary"
+        >
+          Request APK via LinkedIn
+        </a>
+        <a
+          href="https://github.com/nimrodlahav/the-WordNerd"
+          target="_blank"
+          rel="noopener"
+          class="btn btn-ghost"
+        >
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Footer ── -->
+<footer>
+  <div class="container">
+    <p>Visioned, designed and implemented by <a href="https://www.linkedin.com/in/nimrod-lahav-03793523b/" target="_blank" rel="noopener">Nimrod Lahav</a></p>
+    <p>the WordNerd &copy; 2025</p>
+  </div>
+</footer>
+
+</body>
+</html>
