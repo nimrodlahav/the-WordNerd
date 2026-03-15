@@ -214,6 +214,59 @@
       max-width: none;
     }
 
+    /* ── Expandable sections ── */
+    .expand-sections {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .expand-item h3 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      margin-bottom: 0.5rem;
+    }
+
+    .expand-item > p {
+      font-size: 1.05rem;
+      max-width: none;
+      line-height: 1.7;
+      color: var(--muted);
+    }
+
+    .expand-item details {
+      margin-top: 0;
+    }
+
+    .expand-item summary {
+      display: inline;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--accent);
+      cursor: pointer;
+      list-style: none;
+      user-select: none;
+    }
+
+    .expand-item summary::-webkit-details-marker { display: none; }
+    .expand-item details[open] summary { display: none; }
+
+    .expand-body {
+      margin-top: 0.75rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .expand-body p {
+      font-size: 1.05rem;
+      max-width: none;
+      line-height: 1.7;
+    }
+
     /* ── Gallery ── */
     .gallery-desc {
       margin-bottom: 2rem;
@@ -359,12 +412,34 @@
     footer a { color: var(--accent); text-decoration: none; }
     footer a:hover { text-decoration: underline; }
 
+    /* ── Feature video ── */
+    .feature-video-wrap {
+      float: right;
+      width: 250px;
+      margin: 0.5rem 0 2rem 2.5rem;
+      border-radius: 20px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+
+    .feature-video-wrap video {
+      width: 100%;
+      display: block;
+    }
+
+    .features-block::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
     /* ── Responsive ── */
     @media (max-width: 760px) {
       .hero-inner { grid-template-columns: 1fr; }
       .hero-icon { display: none; }
       .gallery-grid { grid-template-columns: repeat(2, 1fr); }
       nav .nav-links { display: none; }
+      .feature-video-wrap { display: none; }
     }
   </style>
 </head>
@@ -379,6 +454,7 @@
     </a>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
+      <li><a href="#features">Features</a></li>
       <li><a href="#gallery">Gallery</a></li>
       <li><a href="#stack">Stack</a></li>
       <li><a href="#docs">Docs</a></li>
@@ -395,7 +471,7 @@
         <div class="hero-tag">Mobile · Hebrew → English · AI</div>
         <h1>Stop drilling.<br /><span>Start learning.</span></h1>
         <p class="hero-desc">
-          WordNerd is a vocab app built for Hebrew speakers learning English. It uses multilingual
+          WordNerd is a vocabulary learning mobile app built for Hebrew speakers learning English. It uses multilingual
           AI embeddings to give real feedback — not just right/wrong, but how close you actually were.
         </p>
         <div class="btn-row">
@@ -414,29 +490,65 @@
 <section id="about">
   <div class="container">
     <p class="section-label">About</p>
-    <h2>Why WordNerd?</h2>
-    <p>
-      Most flashcard apps are just binary — right or wrong. But language doesn't work like that.
-      WordNerd scores your translations on a spectrum, so "friendship" for "companionship" isn't
-      a failure, it's close.
-    </p>
+    <div class="expand-sections">
+      <div class="expand-item">
+        <h3>Why WordNerd?</h3>
+        <p>Learning English is no joke - but it can be more fun. Most tech roles, ivy-league universities, high-profile management positions and many more require English fluency in today's global economy. Yet most evade the actual process of improving their language skills until necessary.</p>
+      </div>
 
-    <div class="about-grid">
-      <div class="card">
-        <h3>3-day cycles</h3>
-        <p>Each word goes through daily quizzes over 3 days. Once you've scored high enough across all three, it's gone from your queue.</p>
+      <div class="expand-item">
+        <h3>Our Vision</h3>
+        <p>The WordNerd doesn't claim to make users fluent speakers or readers overnight, but to serve as the first step to becoming more comfortable with the language. The hard truth is, there is no easy way to learn English from scratch. Nonetheless, actual improvement doesn't follow drastic changes or acquiring costly online courses, but derives from daily steps in the right direction.</p>
+        <details>
+          <summary>Read more</summary>
+          <div class="expand-body">
+            <p>WordNerd was developed for this purpose exactly - replacement of intensive studying with a short, daily, interactive practice.</p>
+          </div>
+        </details>
       </div>
-      <div class="card">
-        <h3>Non-binary feedback</h3>
-        <p>Your translation gets embedded with a multilingual transformer and compared to the target word. The score reflects how close you actually were.</p>
+
+      <div class="expand-item">
+        <h3>How We Differ</h3>
+        <p>For those of you that have already started learning with vocabulary-learning apps, you must have noticed that most exercises offer binary feedback, i.e. Correct/Incorrect. Although most words do have unambivalent meaning – there is some wiggle-room. For instance, if you were tested on the meaning of the word "match" and thought it meant "competition", you would receive negative feedback, even though you're not wrong.</p>
+        <details>
+          <summary>Read more</summary>
+          <div class="expand-body">
+            <p>Here is where the WordNerd shines — non-binary feedback is given mid-test. Filling in "competition" when asked about the semantics of "match" might reward you with a near-perfect score on a scale from 0 to 100. That way, synonyms and semi-identical terms are treated as right answers, allowing the user to receive more informative, non-discrete feedback without compromising correctness.</p>
+            <p>Additionally, the app's quizzing platform is interactive relative to other tools. Instead of passive scrolling or clicking an answer in a multiple-choice question, the WordNerd requires the user to type in the answer – making it more engaging.</p>
+          </div>
+        </details>
       </div>
-      <div class="card">
-        <h3>Leveled word lists</h3>
-        <p>Words are split into Beginner / Intermediate / Advanced. You pick how many batches per day — fits a 5-minute session or a longer one.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── Features ── -->
+<section id="features">
+  <div class="container">
+    <p class="section-label">Features</p>
+    <div class="features-block">
+      <div class="feature-video-wrap">
+        <video autoplay muted loop playsinline>
+          <source src="videos/demo.mp4" type="video/mp4" />
+        </video>
       </div>
-      <div class="card">
-        <h3>Skip what you know</h3>
-        <p>Before each cycle starts, you can tap out the words you already know. No time wasted on things you've already got down.</p>
+      <div class="expand-sections">
+        <div class="expand-item">
+          <h3>3-Day Cycles</h3>
+          <p>Each word goes through daily quizzes over 3 days. Once you've scored high enough across all three, it's gone from your queue.</p>
+        </div>
+        <div class="expand-item">
+          <h3>Non-Binary Feedback</h3>
+          <p>Your translation gets embedded with a multilingual transformer and compared to the target word. The score reflects how close you actually were — not just right or wrong.</p>
+        </div>
+        <div class="expand-item">
+          <h3>Leveled Word Lists</h3>
+          <p>Words are split into Beginner / Intermediate / Advanced. You pick how many batches per day — fits a 5-minute session or a longer one.</p>
+        </div>
+        <div class="expand-item">
+          <h3>Skip Words You Know</h3>
+          <p>Before each cycle starts, you can tap out the words you already know. No time wasted on things you've already got down.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -446,7 +558,7 @@
 <section id="gallery">
   <div class="container">
     <p class="section-label">Gallery</p>
-    <h2>See it in action</h2>
+    <h2>See It In Action</h2>
     <p class="gallery-desc">Screenshots and demo clips from the live app.</p>
 
     <div class="gallery-grid">
@@ -482,7 +594,7 @@
 <section id="stack">
   <div class="container">
     <p class="section-label">Tech Stack</p>
-    <h2>What's under the hood</h2>
+    <h2>What's Under The Hood</h2>
     <p>React Native frontend, Node/Express backend, SQLite for storage, and Transformers.js running the AI side via ONNX.</p>
 
     <div class="stack-grid">
@@ -531,8 +643,8 @@
 <section id="docs">
   <div class="container">
     <p class="section-label">Documentation</p>
-    <h2>References &amp; resources</h2>
-    <p>The main libraries and models the app is built on.</p>
+    <h2>References &amp; Resources</h2>
+    <p>The following are the main libraries and models the app is based on.</p>
 
     <ul class="docs-list">
       <li>
