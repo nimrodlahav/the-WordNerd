@@ -24,4 +24,4 @@ At the beginning of each interval, the user wipes-out words he already knows, re
 
     
 
-*For apk files, screenshots and supplementary information - [Web Page]([https://www.linkedin.com/in/nimrod-lahav-03793523b/](https://nimrodlahav.github.io/the-WordNerd/))*
+*For apk files, screenshots and supplementary information - [Web Page](([https://www.linkedin.com/in/nimrod-lahav-03793523b/](https://nimrodlahav.github.io/the-WordNerd/))*
