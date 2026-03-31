@@ -8,8 +8,8 @@ let embedder = null;
 async function loadEmbedder() {
   if (!embedder) {
     console.log(" Loading multilingual sentence-embedder...");
-    // Multilingual ST model aligned across 50+ languages (incl. Hebrew)
-    embedder = await pipeline(
+
+      embedder = await pipeline(
       "feature-extraction",
       "Xenova/paraphrase-multilingual-MiniLM-L12-v2"
     );
